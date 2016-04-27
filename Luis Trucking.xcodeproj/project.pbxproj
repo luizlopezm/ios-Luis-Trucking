@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E99DA331CD16DCC0027262E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99DA321CD16DCC0027262E /* AppDelegate.swift */; };
+		1E99DA351CD16DCC0027262E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99DA341CD16DCC0027262E /* ViewController.swift */; };
+		1E99DA381CD16DCC0027262E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E99DA361CD16DCC0027262E /* Main.storyboard */; };
+		1E99DA3A1CD16DCC0027262E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E99DA391CD16DCC0027262E /* Assets.xcassets */; };
+		1E99DA3D1CD16DCC0027262E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E99DA3B1CD16DCC0027262E /* LaunchScreen.storyboard */; };
+		1E99DA481CD16DCC0027262E /* Luis_TruckingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99DA471CD16DCC0027262E /* Luis_TruckingTests.swift */; };
+		1E99DA531CD16DCC0027262E /* Luis_TruckingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99DA521CD16DCC0027262E /* Luis_TruckingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E99DA441CD16DCC0027262E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E99DA271CD16DCC0027262E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E99DA2E1CD16DCC0027262E;
+			remoteInfo = "Luis Trucking";
+		};
+		1E99DA4F1CD16DCC0027262E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E99DA271CD16DCC0027262E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E99DA2E1CD16DCC0027262E;
+			remoteInfo = "Luis Trucking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E99DA2F1CD16DCC0027262E /* Luis Trucking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Luis Trucking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E99DA321CD16DCC0027262E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E99DA341CD16DCC0027262E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E99DA371CD16DCC0027262E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E99DA391CD16DCC0027262E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E99DA3C1CD16DCC0027262E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E99DA3E1CD16DCC0027262E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E99DA431CD16DCC0027262E /* Luis TruckingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Luis TruckingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E99DA471CD16DCC0027262E /* Luis_TruckingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luis_TruckingTests.swift; sourceTree = "<group>"; };
+		1E99DA491CD16DCC0027262E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E99DA4E1CD16DCC0027262E /* Luis TruckingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Luis TruckingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E99DA521CD16DCC0027262E /* Luis_TruckingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luis_TruckingUITests.swift; sourceTree = "<group>"; };
+		1E99DA541CD16DCC0027262E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E99DA2C1CD16DCC0027262E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E99DA401CD16DCC0027262E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E99DA4B1CD16DCC0027262E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E99DA261CD16DCC0027262E = {
+			isa = PBXGroup;
+			children = (
+				1E99DA311CD16DCC0027262E /* Luis Trucking */,
+				1E99DA461CD16DCC0027262E /* Luis TruckingTests */,
+				1E99DA511CD16DCC0027262E /* Luis TruckingUITests */,
+				1E99DA301CD16DCC0027262E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E99DA301CD16DCC0027262E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E99DA2F1CD16DCC0027262E /* Luis Trucking.app */,
+				1E99DA431CD16DCC0027262E /* Luis TruckingTests.xctest */,
+				1E99DA4E1CD16DCC0027262E /* Luis TruckingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E99DA311CD16DCC0027262E /* Luis Trucking */ = {
+			isa = PBXGroup;
+			children = (
+				1E99DA321CD16DCC0027262E /* AppDelegate.swift */,
+				1E99DA341CD16DCC0027262E /* ViewController.swift */,
+				1E99DA361CD16DCC0027262E /* Main.storyboard */,
+				1E99DA391CD16DCC0027262E /* Assets.xcassets */,
+				1E99DA3B1CD16DCC0027262E /* LaunchScreen.storyboard */,
+				1E99DA3E1CD16DCC0027262E /* Info.plist */,
+			);
+			path = "Luis Trucking";
+			sourceTree = "<group>";
+		};
+		1E99DA461CD16DCC0027262E /* Luis TruckingTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E99DA471CD16DCC0027262E /* Luis_TruckingTests.swift */,
+				1E99DA491CD16DCC0027262E /* Info.plist */,
+			);
+			path = "Luis TruckingTests";
+			sourceTree = "<group>";
+		};
+		1E99DA511CD16DCC0027262E /* Luis TruckingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E99DA521CD16DCC0027262E /* Luis_TruckingUITests.swift */,
+				1E99DA541CD16DCC0027262E /* Info.plist */,
+			);
+			path = "Luis TruckingUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E99DA2E1CD16DCC0027262E /* Luis Trucking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E99DA571CD16DCC0027262E /* Build configuration list for PBXNativeTarget "Luis Trucking" */;
+			buildPhases = (
+				1E99DA2B1CD16DCC0027262E /* Sources */,
+				1E99DA2C1CD16DCC0027262E /* Frameworks */,
+				1E99DA2D1CD16DCC0027262E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Luis Trucking";
+			productName = "Luis Trucking";
+			productReference = 1E99DA2F1CD16DCC0027262E /* Luis Trucking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E99DA421CD16DCC0027262E /* Luis TruckingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E99DA5A1CD16DCC0027262E /* Build configuration list for PBXNativeTarget "Luis TruckingTests" */;
+			buildPhases = (
+				1E99DA3F1CD16DCC0027262E /* Sources */,
+				1E99DA401CD16DCC0027262E /* Frameworks */,
+				1E99DA411CD16DCC0027262E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E99DA451CD16DCC0027262E /* PBXTargetDependency */,
+			);
+			name = "Luis TruckingTests";
+			productName = "Luis TruckingTests";
+			productReference = 1E99DA431CD16DCC0027262E /* Luis TruckingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1E99DA4D1CD16DCC0027262E /* Luis TruckingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E99DA5D1CD16DCC0027262E /* Build configuration list for PBXNativeTarget "Luis TruckingUITests" */;
+			buildPhases = (
+				1E99DA4A1CD16DCC0027262E /* Sources */,
+				1E99DA4B1CD16DCC0027262E /* Frameworks */,
+				1E99DA4C1CD16DCC0027262E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E99DA501CD16DCC0027262E /* PBXTargetDependency */,
+			);
+			name = "Luis TruckingUITests";
+			productName = "Luis TruckingUITests";
+			productReference = 1E99DA4E1CD16DCC0027262E /* Luis TruckingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E99DA271CD16DCC0027262E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Luis Trucking";
+				TargetAttributes = {
+					1E99DA2E1CD16DCC0027262E = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					1E99DA421CD16DCC0027262E = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 1E99DA2E1CD16DCC0027262E;
+					};
+					1E99DA4D1CD16DCC0027262E = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 1E99DA2E1CD16DCC0027262E;
+					};
+				};
+			};
+			buildConfigurationList = 1E99DA2A1CD16DCC0027262E /* Build configuration list for PBXProject "Luis Trucking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E99DA261CD16DCC0027262E;
+			productRefGroup = 1E99DA301CD16DCC0027262E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E99DA2E1CD16DCC0027262E /* Luis Trucking */,
+				1E99DA421CD16DCC0027262E /* Luis TruckingTests */,
+				1E99DA4D1CD16DCC0027262E /* Luis TruckingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E99DA2D1CD16DCC0027262E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E99DA3D1CD16DCC0027262E /* LaunchScreen.storyboard in Resources */,
+				1E99DA3A1CD16DCC0027262E /* Assets.xcassets in Resources */,
+				1E99DA381CD16DCC0027262E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E99DA411CD16DCC0027262E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E99DA4C1CD16DCC0027262E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E99DA2B1CD16DCC0027262E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E99DA351CD16DCC0027262E /* ViewController.swift in Sources */,
+				1E99DA331CD16DCC0027262E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E99DA3F1CD16DCC0027262E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E99DA481CD16DCC0027262E /* Luis_TruckingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E99DA4A1CD16DCC0027262E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E99DA531CD16DCC0027262E /* Luis_TruckingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E99DA451CD16DCC0027262E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E99DA2E1CD16DCC0027262E /* Luis Trucking */;
+			targetProxy = 1E99DA441CD16DCC0027262E /* PBXContainerItemProxy */;
+		};
+		1E99DA501CD16DCC0027262E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E99DA2E1CD16DCC0027262E /* Luis Trucking */;
+			targetProxy = 1E99DA4F1CD16DCC0027262E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E99DA361CD16DCC0027262E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E99DA371CD16DCC0027262E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1E99DA3B1CD16DCC0027262E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E99DA3C1CD16DCC0027262E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E99DA551CD16DCC0027262E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E99DA561CD16DCC0027262E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E99DA581CD16DCC0027262E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Luis Trucking/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luistrucking.Luis-Trucking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1E99DA591CD16DCC0027262E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Luis Trucking/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luistrucking.Luis-Trucking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1E99DA5B1CD16DCC0027262E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Luis TruckingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luistrucking.Luis-TruckingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Luis Trucking.app/Luis Trucking";
+			};
+			name = Debug;
+		};
+		1E99DA5C1CD16DCC0027262E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Luis TruckingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luistrucking.Luis-TruckingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Luis Trucking.app/Luis Trucking";
+			};
+			name = Release;
+		};
+		1E99DA5E1CD16DCC0027262E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Luis TruckingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luistrucking.Luis-TruckingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Luis Trucking";
+			};
+			name = Debug;
+		};
+		1E99DA5F1CD16DCC0027262E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Luis TruckingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.luistrucking.Luis-TruckingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Luis Trucking";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E99DA2A1CD16DCC0027262E /* Build configuration list for PBXProject "Luis Trucking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E99DA551CD16DCC0027262E /* Debug */,
+				1E99DA561CD16DCC0027262E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E99DA571CD16DCC0027262E /* Build configuration list for PBXNativeTarget "Luis Trucking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E99DA581CD16DCC0027262E /* Debug */,
+				1E99DA591CD16DCC0027262E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1E99DA5A1CD16DCC0027262E /* Build configuration list for PBXNativeTarget "Luis TruckingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E99DA5B1CD16DCC0027262E /* Debug */,
+				1E99DA5C1CD16DCC0027262E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1E99DA5D1CD16DCC0027262E /* Build configuration list for PBXNativeTarget "Luis TruckingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E99DA5E1CD16DCC0027262E /* Debug */,
+				1E99DA5F1CD16DCC0027262E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E99DA271CD16DCC0027262E /* Project object */;
+}
