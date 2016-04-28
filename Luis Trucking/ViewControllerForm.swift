@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ViewControllerForm.swift
 //  Luis Trucking
 //
 //  Created by Luiz Lopez on 4/27/16.
@@ -8,18 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+
+class ViewControllerForm: UIViewController {
+    
+    @IBAction func logout(sender: UIBarButtonItem) {
+        self.performSegueWithIdentifier("ftab_to_lg", sender: sender)
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
+
 

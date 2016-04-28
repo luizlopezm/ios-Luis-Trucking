@@ -7,13 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E99DA331CD16DCC0027262E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99DA321CD16DCC0027262E /* AppDelegate.swift */; };
-		1E99DA351CD16DCC0027262E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99DA341CD16DCC0027262E /* ViewController.swift */; };
-		1E99DA381CD16DCC0027262E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E99DA361CD16DCC0027262E /* Main.storyboard */; };
+		1E02F4731CD181A200C4B742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E02F4721CD181A200C4B742 /* Main.storyboard */; };
+		1E214C401CD17DA0009853AA /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E214C3F1CD17DA0009853AA /* Eureka.framework */; };
+		1E35BEA11CD172BE00D2290C /* SwiftForms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E35BEA01CD172BE00D2290C /* SwiftForms.framework */; };
+		1E35BEA71CD1731300D2290C /* IMG_1654.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E35BEA21CD1731300D2290C /* IMG_1654.png */; };
+		1E35BEA81CD1731300D2290C /* RobotoSlab-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E35BEA31CD1731300D2290C /* RobotoSlab-Thin.ttf */; };
+		1E35BEA91CD1731300D2290C /* RobotoSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E35BEA41CD1731300D2290C /* RobotoSlab-Light.ttf */; };
+		1E35BEAA1CD1731300D2290C /* RobotoSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E35BEA51CD1731300D2290C /* RobotoSlab-Bold.ttf */; };
+		1E35BEAB1CD1731300D2290C /* RobotoSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E35BEA61CD1731300D2290C /* RobotoSlab-Regular.ttf */; };
+		1E35BEB31CD1737700D2290C /* TicketModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35BEAC1CD1737700D2290C /* TicketModel.swift */; };
+		1E35BEB41CD1737700D2290C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35BEAD1CD1737700D2290C /* AppDelegate.swift */; };
+		1E35BEB51CD1737700D2290C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35BEAE1CD1737700D2290C /* ViewController.swift */; };
+		1E35BEB61CD1737700D2290C /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35BEAF1CD1737700D2290C /* ViewControllerHome.swift */; };
+		1E35BEC01CD1767000D2290C /* ViewControllerForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35BEBF1CD1767000D2290C /* ViewControllerForm.swift */; };
+		1E433F801CD2270D008D2A9E /* ViewControllerFormM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E433F7F1CD2270D008D2A9E /* ViewControllerFormM.swift */; };
 		1E99DA3A1CD16DCC0027262E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E99DA391CD16DCC0027262E /* Assets.xcassets */; };
 		1E99DA3D1CD16DCC0027262E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E99DA3B1CD16DCC0027262E /* LaunchScreen.storyboard */; };
 		1E99DA481CD16DCC0027262E /* Luis_TruckingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99DA471CD16DCC0027262E /* Luis_TruckingTests.swift */; };
 		1E99DA531CD16DCC0027262E /* Luis_TruckingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99DA521CD16DCC0027262E /* Luis_TruckingUITests.swift */; };
+		F4D6903CDECBF478BBB1CD82 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6252E68205D3668AEDA7CDEC /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +46,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042A96052C6F8ADEF67C4325 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1E02F4721CD181A200C4B742 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1E214C3F1CD17DA0009853AA /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = "../../Library/Developer/Xcode/DerivedData/Luis_Trucking-fedgedipxjjxwdgsidxyoklhqoxj/Build/Products/Debug-iphonesimulator/Eureka.framework"; sourceTree = "<group>"; };
+		1E35BEA01CD172BE00D2290C /* SwiftForms.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftForms.framework; path = "../../Library/Developer/Xcode/DerivedData/Luis_Trucking-fedgedipxjjxwdgsidxyoklhqoxj/Build/Products/Debug-iphonesimulator/SwiftForms.framework"; sourceTree = "<group>"; };
+		1E35BEA21CD1731300D2290C /* IMG_1654.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_1654.png; path = "../../../Desktop/OneDrive - Lake Elsinore Unified School District/IMG_1654.png"; sourceTree = "<group>"; };
+		1E35BEA31CD1731300D2290C /* RobotoSlab-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoSlab-Thin.ttf"; path = "../../../Downloads/roboto-slab/RobotoSlab-Thin.ttf"; sourceTree = "<group>"; };
+		1E35BEA41CD1731300D2290C /* RobotoSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoSlab-Light.ttf"; path = "../../../Downloads/roboto-slab/RobotoSlab-Light.ttf"; sourceTree = "<group>"; };
+		1E35BEA51CD1731300D2290C /* RobotoSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoSlab-Bold.ttf"; path = "../../../Downloads/roboto-slab/RobotoSlab-Bold.ttf"; sourceTree = "<group>"; };
+		1E35BEA61CD1731300D2290C /* RobotoSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoSlab-Regular.ttf"; path = "../../../Downloads/roboto-slab/RobotoSlab-Regular.ttf"; sourceTree = "<group>"; };
+		1E35BEAC1CD1737700D2290C /* TicketModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TicketModel.swift; path = "../../Test App/Test App/TicketModel.swift"; sourceTree = "<group>"; };
+		1E35BEAD1CD1737700D2290C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../Test App/Test App/AppDelegate.swift"; sourceTree = "<group>"; };
+		1E35BEAE1CD1737700D2290C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../Test App/Test App/ViewController.swift"; sourceTree = "<group>"; };
+		1E35BEAF1CD1737700D2290C /* ViewControllerHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerHome.swift; path = "../../Test App/Test App/ViewControllerHome.swift"; sourceTree = "<group>"; };
+		1E35BEBF1CD1767000D2290C /* ViewControllerForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerForm.swift; sourceTree = "<group>"; };
+		1E433F7F1CD2270D008D2A9E /* ViewControllerFormM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFormM.swift; sourceTree = "<group>"; };
 		1E99DA2F1CD16DCC0027262E /* Luis Trucking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Luis Trucking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1E99DA321CD16DCC0027262E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1E99DA341CD16DCC0027262E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1E99DA371CD16DCC0027262E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1E99DA391CD16DCC0027262E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E99DA3C1CD16DCC0027262E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E99DA3E1CD16DCC0027262E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +71,8 @@
 		1E99DA4E1CD16DCC0027262E /* Luis TruckingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Luis TruckingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E99DA521CD16DCC0027262E /* Luis_TruckingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luis_TruckingUITests.swift; sourceTree = "<group>"; };
 		1E99DA541CD16DCC0027262E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6252E68205D3668AEDA7CDEC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75CD4416362B08595EFDB7E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +80,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E214C401CD17DA0009853AA /* Eureka.framework in Frameworks */,
+				1E35BEA11CD172BE00D2290C /* SwiftForms.framework in Frameworks */,
+				F4D6903CDECBF478BBB1CD82 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +103,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		026095732AB596179B406405 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				042A96052C6F8ADEF67C4325 /* Pods.debug.xcconfig */,
+				A75CD4416362B08595EFDB7E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		17CC299ABD5F3B3D6F967C59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E214C3F1CD17DA0009853AA /* Eureka.framework */,
+				1E35BEA01CD172BE00D2290C /* SwiftForms.framework */,
+				6252E68205D3668AEDA7CDEC /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1E99DA261CD16DCC0027262E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +129,8 @@
 				1E99DA461CD16DCC0027262E /* Luis TruckingTests */,
 				1E99DA511CD16DCC0027262E /* Luis TruckingUITests */,
 				1E99DA301CD16DCC0027262E /* Products */,
+				026095732AB596179B406405 /* Pods */,
+				17CC299ABD5F3B3D6F967C59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +147,21 @@
 		1E99DA311CD16DCC0027262E /* Luis Trucking */ = {
 			isa = PBXGroup;
 			children = (
-				1E99DA321CD16DCC0027262E /* AppDelegate.swift */,
-				1E99DA341CD16DCC0027262E /* ViewController.swift */,
-				1E99DA361CD16DCC0027262E /* Main.storyboard */,
+				1E35BEAC1CD1737700D2290C /* TicketModel.swift */,
+				1E35BEAD1CD1737700D2290C /* AppDelegate.swift */,
+				1E35BEAE1CD1737700D2290C /* ViewController.swift */,
+				1E35BEAF1CD1737700D2290C /* ViewControllerHome.swift */,
+				1E433F7F1CD2270D008D2A9E /* ViewControllerFormM.swift */,
+				1E35BEBF1CD1767000D2290C /* ViewControllerForm.swift */,
 				1E99DA391CD16DCC0027262E /* Assets.xcassets */,
 				1E99DA3B1CD16DCC0027262E /* LaunchScreen.storyboard */,
+				1E02F4721CD181A200C4B742 /* Main.storyboard */,
 				1E99DA3E1CD16DCC0027262E /* Info.plist */,
+				1E35BEA21CD1731300D2290C /* IMG_1654.png */,
+				1E35BEA31CD1731300D2290C /* RobotoSlab-Thin.ttf */,
+				1E35BEA41CD1731300D2290C /* RobotoSlab-Light.ttf */,
+				1E35BEA51CD1731300D2290C /* RobotoSlab-Bold.ttf */,
+				1E35BEA61CD1731300D2290C /* RobotoSlab-Regular.ttf */,
 			);
 			path = "Luis Trucking";
 			sourceTree = "<group>";
@@ -132,9 +191,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1E99DA571CD16DCC0027262E /* Build configuration list for PBXNativeTarget "Luis Trucking" */;
 			buildPhases = (
+				ABF03245C8160EC046D9FBFB /* Check Pods Manifest.lock */,
 				1E99DA2B1CD16DCC0027262E /* Sources */,
 				1E99DA2C1CD16DCC0027262E /* Frameworks */,
 				1E99DA2D1CD16DCC0027262E /* Resources */,
+				B1A6C373A927573D75EB9CF5 /* Embed Pods Frameworks */,
+				ABC027239D9E02DE245ECBC5 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +255,7 @@
 				TargetAttributes = {
 					1E99DA2E1CD16DCC0027262E = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = A26SYPNZ54;
 					};
 					1E99DA421CD16DCC0027262E = {
 						CreatedOnToolsVersion = 7.3;
@@ -229,9 +292,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E35BEAB1CD1731300D2290C /* RobotoSlab-Regular.ttf in Resources */,
 				1E99DA3D1CD16DCC0027262E /* LaunchScreen.storyboard in Resources */,
+				1E35BEA81CD1731300D2290C /* RobotoSlab-Thin.ttf in Resources */,
+				1E02F4731CD181A200C4B742 /* Main.storyboard in Resources */,
+				1E35BEAA1CD1731300D2290C /* RobotoSlab-Bold.ttf in Resources */,
+				1E35BEA91CD1731300D2290C /* RobotoSlab-Light.ttf in Resources */,
 				1E99DA3A1CD16DCC0027262E /* Assets.xcassets in Resources */,
-				1E99DA381CD16DCC0027262E /* Main.storyboard in Resources */,
+				1E35BEA71CD1731300D2290C /* IMG_1654.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,13 +319,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		ABC027239D9E02DE245ECBC5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABF03245C8160EC046D9FBFB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1A6C373A927573D75EB9CF5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1E99DA2B1CD16DCC0027262E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E99DA351CD16DCC0027262E /* ViewController.swift in Sources */,
-				1E99DA331CD16DCC0027262E /* AppDelegate.swift in Sources */,
+				1E35BEB51CD1737700D2290C /* ViewController.swift in Sources */,
+				1E35BEB41CD1737700D2290C /* AppDelegate.swift in Sources */,
+				1E433F801CD2270D008D2A9E /* ViewControllerFormM.swift in Sources */,
+				1E35BEC01CD1767000D2290C /* ViewControllerForm.swift in Sources */,
+				1E35BEB31CD1737700D2290C /* TicketModel.swift in Sources */,
+				1E35BEB61CD1737700D2290C /* ViewControllerHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +413,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1E99DA361CD16DCC0027262E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1E99DA371CD16DCC0027262E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1E99DA3B1CD16DCC0027262E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -397,23 +509,34 @@
 		};
 		1E99DA581CD16DCC0027262E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 042A96052C6F8ADEF67C4325 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Luis Trucking/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.luistrucking.Luis-Trucking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		1E99DA591CD16DCC0027262E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A75CD4416362B08595EFDB7E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Luis Trucking/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.luistrucking.Luis-Trucking";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -482,6 +605,7 @@
 				1E99DA591CD16DCC0027262E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E99DA5A1CD16DCC0027262E /* Build configuration list for PBXNativeTarget "Luis TruckingTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +614,7 @@
 				1E99DA5C1CD16DCC0027262E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1E99DA5D1CD16DCC0027262E /* Build configuration list for PBXNativeTarget "Luis TruckingUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +623,7 @@
 				1E99DA5F1CD16DCC0027262E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

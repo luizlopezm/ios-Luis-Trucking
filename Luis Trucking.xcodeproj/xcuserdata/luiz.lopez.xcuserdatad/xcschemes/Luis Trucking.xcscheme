@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1E99DA2E1CD16DCC0027262E"
+               BuildableName = "Luis Trucking.app"
+               BlueprintName = "Luis Trucking"
+               ReferencedContainer = "container:Luis Trucking.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1E99DA421CD16DCC0027262E"
+               BuildableName = "Luis TruckingTests.xctest"
+               BlueprintName = "Luis TruckingTests"
+               ReferencedContainer = "container:Luis Trucking.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1E99DA4D1CD16DCC0027262E"
+               BuildableName = "Luis TruckingUITests.xctest"
+               BlueprintName = "Luis TruckingUITests"
+               ReferencedContainer = "container:Luis Trucking.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1E99DA2E1CD16DCC0027262E"
+            BuildableName = "Luis Trucking.app"
+            BlueprintName = "Luis Trucking"
+            ReferencedContainer = "container:Luis Trucking.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1E99DA2E1CD16DCC0027262E"
+            BuildableName = "Luis Trucking.app"
+            BlueprintName = "Luis Trucking"
+            ReferencedContainer = "container:Luis Trucking.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "1E99DA2E1CD16DCC0027262E"
+            BuildableName = "Luis Trucking.app"
+            BlueprintName = "Luis Trucking"
+            ReferencedContainer = "container:Luis Trucking.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

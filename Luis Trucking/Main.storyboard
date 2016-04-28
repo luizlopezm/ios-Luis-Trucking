@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FXP-EX-l39">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="RobotoSlab-Light.ttf">
+            <string>RobotoSlab-Light</string>
+        </mutableArray>
+        <mutableArray key="RobotoSlab-Regular.ttf">
+            <string>RobotoSlab-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Login-->
+        <scene sceneID="w6r-MF-mDg">
+            <objects>
+                <viewController title="Login" id="FXP-EX-l39" customClass="ViewController" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fdr-5n-8KW"/>
+                        <viewControllerLayoutGuide type="bottom" id="MOT-QW-FYe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LDL-gl-YlX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_1654.png" translatesAutoresizingMaskIntoConstraints="NO" id="mOY-5e-XDD">
+                                <rect key="frame" x="-171" y="0.0" width="1000" height="739"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="O5i-NA-Tg2">
+                                <rect key="frame" x="107" y="305" width="200" height="45"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65417564655172411" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="1DZ-6F-0QV"/>
+                                    <constraint firstAttribute="width" constant="200" id="8p9-wr-fwq"/>
+                                </constraints>
+                                <color key="textColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nAG-Yd-Wjq">
+                                <rect key="frame" x="137" y="448" width="140" height="40"/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GCx-Dg-laj"/>
+                                    <constraint firstAttribute="width" constant="140" id="yLL-bg-rxU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="23"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="SignOn:" destination="FXP-EX-l39" eventType="touchUpInside" id="FOL-EL-TcC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7lL-is-rFl">
+                                <rect key="frame" x="107" y="370" width="200" height="45"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.65261314655172409" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="dm3-mi-x3M"/>
+                                    <constraint firstAttribute="width" constant="200" id="jlu-3H-aG5"/>
+                                </constraints>
+                                <color key="textColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfg-gt-BzD">
+                                <rect key="frame" x="124" y="146" width="165.5" height="43"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.35560344827586204" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="3"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Luis Trucking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ItE-i6-sdU">
+                                <rect key="frame" x="76" y="190" width="262" height="56"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="40"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <size key="shadowOffset" width="0.0" height="3"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7lL-is-rFl" firstAttribute="centerY" secondItem="LDL-gl-YlX" secondAttribute="centerY" constant="25" id="ArI-VC-wZu"/>
+                            <constraint firstItem="hfg-gt-BzD" firstAttribute="centerX" secondItem="LDL-gl-YlX" secondAttribute="centerX" id="F7X-o8-9Ci"/>
+                            <constraint firstItem="O5i-NA-Tg2" firstAttribute="centerX" secondItem="LDL-gl-YlX" secondAttribute="centerX" id="K8O-RY-Peq"/>
+                            <constraint firstItem="O5i-NA-Tg2" firstAttribute="centerY" secondItem="LDL-gl-YlX" secondAttribute="centerY" constant="-40" id="PHK-fY-TIv"/>
+                            <constraint firstItem="ItE-i6-sdU" firstAttribute="centerX" secondItem="LDL-gl-YlX" secondAttribute="centerX" id="T69-JV-JEv"/>
+                            <constraint firstItem="7lL-is-rFl" firstAttribute="centerX" secondItem="LDL-gl-YlX" secondAttribute="centerX" id="VUR-tA-2Ss"/>
+                            <constraint firstItem="ItE-i6-sdU" firstAttribute="centerY" secondItem="LDL-gl-YlX" secondAttribute="centerY" constant="-150" id="XA9-kd-TUZ"/>
+                            <constraint firstItem="nAG-Yd-Wjq" firstAttribute="centerX" secondItem="LDL-gl-YlX" secondAttribute="centerX" id="cYb-pj-5JV"/>
+                            <constraint firstItem="nAG-Yd-Wjq" firstAttribute="centerY" secondItem="LDL-gl-YlX" secondAttribute="centerY" constant="100" id="qUK-H7-dRF"/>
+                            <constraint firstItem="hfg-gt-BzD" firstAttribute="centerY" secondItem="LDL-gl-YlX" secondAttribute="centerY" constant="-200" id="siI-Im-dte"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="passWord" destination="7lL-is-rFl" id="VdG-fK-rAd"/>
+                        <outlet property="userName" destination="O5i-NA-Tg2" id="EU8-Qw-tOX"/>
+                        <segue destination="lqZ-lT-Ukc" kind="presentation" identifier="login_success" modalTransitionStyle="crossDissolve" id="CmJ-4l-Hbz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LbT-Qv-3Ga" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-516" y="-45"/>
+        </scene>
+        <!--Ticket-->
+        <scene sceneID="s9F-Ts-MIa">
+            <objects>
+                <viewController title="Ticket" id="JrX-6K-d9S" customClass="ViewControllerForm" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zMi-vv-vVZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="r0n-qp-awP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dlR-qf-x8m">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbl-aD-oqN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5o6-yg-4Sl"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2SF-jG-3OH"/>
+                                    <barButtonItem title="Logout" id="P3t-h9-MiN">
+                                        <connections>
+                                            <action selector="logout:" destination="JrX-6K-d9S" id="jYM-Dv-DQ6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xee-ZQ-c9n">
+                                <rect key="frame" x="0.0" y="60" width="414" height="627"/>
+                                <connections>
+                                    <segue destination="iVW-h2-A2l" kind="embed" id="iBK-yY-Xbp"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="rbl-aD-oqN" secondAttribute="trailing" constant="-20" id="G7l-fn-RXs"/>
+                            <constraint firstItem="rbl-aD-oqN" firstAttribute="leading" secondItem="dlR-qf-x8m" secondAttribute="leadingMargin" constant="-20" id="fiP-fM-wcs"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ticket" image="note-write-7" id="djU-AI-NeP"/>
+                    <connections>
+                        <segue destination="FXP-EX-l39" kind="presentation" identifier="ftab_to_lg" modalTransitionStyle="crossDissolve" id="ePb-Tw-8tN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LYh-3A-kCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="520" y="373"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="c24-NA-YEd">
+            <objects>
+                <viewController title="Home" id="8Tz-A5-iIf" customClass="ViewControllerHome" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="j4H-Rg-SGd"/>
+                        <viewControllerLayoutGuide type="bottom" id="s1E-sF-A6A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="61O-Jq-Fl9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fap-bj-eCy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="mEk-J9-RnM"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ZwW-kx-LxS"/>
+                                    <barButtonItem title="Logout" id="4lW-dd-1zV">
+                                        <connections>
+                                            <action selector="logout:" destination="8Tz-A5-iIf" id="li3-Gn-nwE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fap-bj-eCy" secondAttribute="trailing" constant="-20" id="48k-gK-6hl"/>
+                            <constraint firstItem="fap-bj-eCy" firstAttribute="leading" secondItem="61O-Jq-Fl9" secondAttribute="leadingMargin" constant="-20" id="6C3-xs-eVb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="home-7" id="hZD-S5-tZp"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="FXP-EX-l39" kind="presentation" identifier="htab_to_lg" modalTransitionStyle="crossDissolve" id="eoZ-qK-8Up"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TPQ-MC-CkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="520" y="-507"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="sd5-4E-PLR">
+            <objects>
+                <tabBarController id="lqZ-lT-Ukc" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ghi-bO-rxj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="8Tz-A5-iIf" kind="relationship" relationship="viewControllers" id="ZhU-Yo-S7e"/>
+                        <segue destination="JrX-6K-d9S" kind="relationship" relationship="viewControllers" id="7pw-h7-OdK"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7S-l2-mnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="-45"/>
+        </scene>
+        <!--View Controller FormM-->
+        <scene sceneID="BPr-tp-S0k">
+            <objects>
+                <viewController id="iVW-h2-A2l" customClass="ViewControllerFormM" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kET-TR-qPo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mTZ-Du-EOc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1074" y="372.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_1654.png" width="2048" height="1536"/>
+        <image name="home-7" width="30" height="30"/>
+        <image name="note-write-7" width="30" height="30"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ePb-Tw-8tN"/>
+    </inferredMetricsTieBreakers>
+</document>
