@@ -1,0 +1,6 @@
+framework module Pods_Luis_TruckingTests {
+  umbrella header "Pods-Luis TruckingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
