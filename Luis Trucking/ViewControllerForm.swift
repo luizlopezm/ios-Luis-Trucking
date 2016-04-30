@@ -8,13 +8,14 @@
 
 import UIKit
 
-
-
 class ViewControllerForm: UIViewController {
     
     @IBAction func logout(sender: UIBarButtonItem) {
         self.performSegueWithIdentifier("ftab_to_lg", sender: sender)
         
+    }
+    @IBAction func Submit(sender: UIButton) {
+        self.performSegueWithIdentifier("submit", sender: sender)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

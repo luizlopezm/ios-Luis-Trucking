@@ -25,6 +25,8 @@
 		1E99DA3D1CD16DCC0027262E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E99DA3B1CD16DCC0027262E /* LaunchScreen.storyboard */; };
 		1E99DA481CD16DCC0027262E /* Luis_TruckingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99DA471CD16DCC0027262E /* Luis_TruckingTests.swift */; };
 		1E99DA531CD16DCC0027262E /* Luis_TruckingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99DA521CD16DCC0027262E /* Luis_TruckingUITests.swift */; };
+		1EF3F18A1CD3FAC200DC82FD /* ViewControllerTicketSubmit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3F1891CD3FAC200DC82FD /* ViewControllerTicketSubmit.swift */; };
+		1EF3F18C1CD41D8900DC82FD /* DataPull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3F18B1CD41D8900DC82FD /* DataPull.swift */; };
 		F4D6903CDECBF478BBB1CD82 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6252E68205D3668AEDA7CDEC /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +73,8 @@
 		1E99DA4E1CD16DCC0027262E /* Luis TruckingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Luis TruckingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E99DA521CD16DCC0027262E /* Luis_TruckingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luis_TruckingUITests.swift; sourceTree = "<group>"; };
 		1E99DA541CD16DCC0027262E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EF3F1891CD3FAC200DC82FD /* ViewControllerTicketSubmit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTicketSubmit.swift; sourceTree = "<group>"; };
+		1EF3F18B1CD41D8900DC82FD /* DataPull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPull.swift; sourceTree = "<group>"; };
 		6252E68205D3668AEDA7CDEC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75CD4416362B08595EFDB7E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,11 +152,13 @@
 			isa = PBXGroup;
 			children = (
 				1E35BEAC1CD1737700D2290C /* TicketModel.swift */,
+				1EF3F18B1CD41D8900DC82FD /* DataPull.swift */,
 				1E35BEAD1CD1737700D2290C /* AppDelegate.swift */,
 				1E35BEAE1CD1737700D2290C /* ViewController.swift */,
 				1E35BEAF1CD1737700D2290C /* ViewControllerHome.swift */,
 				1E433F7F1CD2270D008D2A9E /* ViewControllerFormM.swift */,
 				1E35BEBF1CD1767000D2290C /* ViewControllerForm.swift */,
+				1EF3F1891CD3FAC200DC82FD /* ViewControllerTicketSubmit.swift */,
 				1E99DA391CD16DCC0027262E /* Assets.xcassets */,
 				1E99DA3B1CD16DCC0027262E /* LaunchScreen.storyboard */,
 				1E02F4721CD181A200C4B742 /* Main.storyboard */,
@@ -372,11 +378,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF3F18C1CD41D8900DC82FD /* DataPull.swift in Sources */,
 				1E35BEB51CD1737700D2290C /* ViewController.swift in Sources */,
 				1E35BEB41CD1737700D2290C /* AppDelegate.swift in Sources */,
 				1E433F801CD2270D008D2A9E /* ViewControllerFormM.swift in Sources */,
 				1E35BEC01CD1767000D2290C /* ViewControllerForm.swift in Sources */,
 				1E35BEB31CD1737700D2290C /* TicketModel.swift in Sources */,
+				1EF3F18A1CD3FAC200DC82FD /* ViewControllerTicketSubmit.swift in Sources */,
 				1E35BEB61CD1737700D2290C /* ViewControllerHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
