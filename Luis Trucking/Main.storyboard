@@ -12,6 +12,7 @@
         </mutableArray>
         <mutableArray key="RobotoSlab-Regular.ttf">
             <string>RobotoSlab-Regular</string>
+            <string>RobotoSlab-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -102,6 +103,7 @@
                             <constraint firstItem="hfg-gt-BzD" firstAttribute="centerY" secondItem="LDL-gl-YlX" secondAttribute="centerY" constant="-200" id="siI-Im-dte"/>
                         </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="passWord" destination="7lL-is-rFl" id="VdG-fK-rAd"/>
                         <outlet property="userName" destination="O5i-NA-Tg2" id="EU8-Qw-tOX"/>
@@ -110,7 +112,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LbT-Qv-3Ga" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-516" y="-45"/>
+            <point key="canvasLocation" x="-568" y="-65"/>
+        </scene>
+        <!--Expense Scene-->
+        <scene sceneID="5gY-lt-v4G">
+            <objects>
+                <viewController title="Expense Scene" id="RSr-TC-gOW" customClass="ViewControllerExpense" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AOh-oh-aFm"/>
+                        <viewControllerLayoutGuide type="bottom" id="xzs-YN-Hqb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eMO-Ye-HBb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ji-Kt-vMF">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="awV-pp-OkR"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Myy-XY-abV"/>
+                                    <barButtonItem title="Logout" width="70" id="Ean-Va-7Xx">
+                                        <connections>
+                                            <action selector="log_t:" destination="RSr-TC-gOW" id="Enp-sD-Hct"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Expense" image="wallet-7" id="BaE-QX-GXo"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <segue destination="FXP-EX-l39" kind="presentation" identifier="logoff" id="PKq-JD-QmV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cgr-vh-vZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="1102"/>
         </scene>
         <!--Ticket-->
         <scene sceneID="s9F-Ts-MIa">
@@ -124,23 +169,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbl-aD-oqN">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="5o6-yg-4Sl"/>
-                                </constraints>
-                                <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2SF-jG-3OH"/>
-                                    <barButtonItem title="Logout" id="P3t-h9-MiN">
-                                        <connections>
-                                            <action selector="logout:" destination="JrX-6K-d9S" id="jYM-Dv-DQ6"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="barTintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
-                            </toolbar>
                             <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uLS-RN-zli">
                                 <rect key="frame" x="0.0" y="60" width="414" height="627"/>
                                 <connections>
@@ -163,6 +191,23 @@
                                     <action selector="Submit:" destination="JrX-6K-d9S" eventType="touchUpInside" id="2VA-ao-kTZ"/>
                                 </connections>
                             </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rbl-aD-oqN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="5o6-yg-4Sl"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2SF-jG-3OH"/>
+                                    <barButtonItem title="Logout" width="70" id="P3t-h9-MiN">
+                                        <connections>
+                                            <action selector="logout:" destination="JrX-6K-d9S" id="jYM-Dv-DQ6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -177,7 +222,7 @@
                     <tabBarItem key="tabBarItem" title="Ticket" image="note-write-7" id="djU-AI-NeP"/>
                     <connections>
                         <segue destination="FXP-EX-l39" kind="presentation" identifier="ftab_to_lg" modalTransitionStyle="crossDissolve" id="ePb-Tw-8tN"/>
-                        <segue destination="QE0-gC-xL3" kind="presentation" identifier="submit" id="ujb-RZ-Pir"/>
+                        <segue destination="QE0-gC-xL3" kind="presentation" identifier="submit" modalTransitionStyle="crossDissolve" id="ujb-RZ-Pir"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYh-3A-kCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -204,7 +249,7 @@
                                 </constraints>
                                 <items>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ZwW-kx-LxS"/>
-                                    <barButtonItem title="Logout" id="4lW-dd-1zV">
+                                    <barButtonItem title="Logout" width="70" id="4lW-dd-1zV">
                                         <connections>
                                             <action selector="logout:" destination="8Tz-A5-iIf" id="li3-Gn-nwE"/>
                                         </connections>
@@ -250,6 +295,7 @@
                     <connections>
                         <segue destination="8Tz-A5-iIf" kind="relationship" relationship="viewControllers" id="ZhU-Yo-S7e"/>
                         <segue destination="JrX-6K-d9S" kind="relationship" relationship="viewControllers" id="7pw-h7-OdK"/>
+                        <segue destination="RSr-TC-gOW" kind="relationship" relationship="viewControllers" id="xgM-Ph-Kzw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7S-l2-mnO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -286,27 +332,80 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ticket Submit" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yf4-F8-ojX">
-                                <rect key="frame" x="159" y="213" width="104" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grenc" translatesAutoresizingMaskIntoConstraints="NO" id="gt2-EN-Ivn">
+                                <rect key="frame" x="107" y="218" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="ZTh-Sh-trc"/>
+                                    <constraint firstAttribute="height" constant="200" id="wNg-iq-HY7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Ticket was successfully submitted on:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EvX-UW-cLe">
+                                <rect key="frame" x="82" y="465" width="250" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="ZYZ-Q6-igy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="17"/>
+                                <color key="textColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dye-I2-a9I">
+                                <rect key="frame" x="202" y="490" width="150" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Lt6-AH-UOV"/>
+                                    <constraint firstAttribute="width" constant="150" id="gSU-Ga-X6S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SAk-pt-eri">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="dyj-Cl-Kiq"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="&lt; Back" width="70" id="vc2-yU-n9g">
+                                        <connections>
+                                            <action selector="back:" destination="QE0-gC-xL3" id="cb8-Cj-nK5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="wGo-UT-Sy7"/>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gt2-EN-Ivn" firstAttribute="centerX" secondItem="vLV-PX-xY2" secondAttribute="centerX" id="4QJ-V3-pCP"/>
+                            <constraint firstItem="EvX-UW-cLe" firstAttribute="centerY" secondItem="vLV-PX-xY2" secondAttribute="centerY" constant="120" id="KOa-6F-DGz"/>
+                            <constraint firstItem="EvX-UW-cLe" firstAttribute="centerX" secondItem="vLV-PX-xY2" secondAttribute="centerX" id="MCS-4J-1QD"/>
+                            <constraint firstItem="dye-I2-a9I" firstAttribute="centerX" secondItem="vLV-PX-xY2" secondAttribute="centerX" constant="70" id="Sko-yH-fIZ"/>
+                            <constraint firstItem="dye-I2-a9I" firstAttribute="centerY" secondItem="vLV-PX-xY2" secondAttribute="centerY" constant="132" id="czc-dE-9tb"/>
+                            <constraint firstItem="gt2-EN-Ivn" firstAttribute="centerY" secondItem="vLV-PX-xY2" secondAttribute="centerY" constant="-50" id="sfa-B9-dhO"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="subm" destination="dye-I2-a9I" id="ger-TC-YC9"/>
+                        <segue destination="lqZ-lT-Ukc" kind="presentation" identifier="hm" modalTransitionStyle="crossDissolve" id="hpq-sC-jRb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8H-Ee-MJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="520" y="1314"/>
+            <point key="canvasLocation" x="520" y="1390"/>
         </scene>
     </scenes>
     <resources>
         <image name="IMG_1654.png" width="2048" height="1536"/>
+        <image name="grenc" width="512" height="512"/>
         <image name="home-7" width="30" height="30"/>
         <image name="note-write-7" width="30" height="30"/>
+        <image name="wallet-7" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="hpq-sC-jRb"/>
         <segue reference="ePb-Tw-8tN"/>
     </inferredMetricsTieBreakers>
 </document>

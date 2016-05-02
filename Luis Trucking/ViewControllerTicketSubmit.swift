@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewControllerTicketSubmit: UIViewController {
+    @IBAction func back(sender: UIBarButtonItem) {
+        self.performSegueWithIdentifier("hm", sender: sender)
+        
+    }
+
+    @IBOutlet weak var subm: UILabel!
 
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -23,6 +29,12 @@ class ViewControllerTicketSubmit: UIViewController {
         tick.brokername = Broker
         tick.haulername = Hauler
         SubmitTicket(tick)
+        
+        let date = NSDate()
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "dd/M/yyyy, hh:mm aa"
+        subm.text = dateFormatter.stringFromDate(date)
+        
         
         // Do any additional setup after loading the view.
     }

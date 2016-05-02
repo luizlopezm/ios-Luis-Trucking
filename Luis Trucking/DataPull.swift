@@ -155,8 +155,6 @@ func SubmitTicket(ticket: TicketModel){
     let ticketH: String = "hauler=" + ticket.haulername!
     let ticketTN: String = "tons=" + ticket.total!
     let ticketU: String = "login=" + templg
-    
-    
     let semaphore = dispatch_semaphore_create(0)
     
     let log = ticketID + "&" + ticketDate + "&" + ticketRate + "&" + ticketT + "&" + ticketB + "&" + ticketN + "&" + ticketH + "&" + ticketTN + "&" + ticketU
