@@ -18,7 +18,7 @@ class ViewControllerTicketSubmit: UIViewController {
 
     override func viewDidLoad(){
         super.viewDidLoad()
-        var tick = TicketModel()
+        let tick = TicketModel()
         
         tick.ticketid = TicketID
         tick.ticketdate = Date

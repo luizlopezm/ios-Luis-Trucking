@@ -143,6 +143,12 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="barTintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fe6-IW-P0v">
+                                <rect key="frame" x="0.0" y="60" width="414" height="627"/>
+                                <connections>
+                                    <segue destination="hPg-b6-FVU" kind="embed" id="bNP-ve-zIr"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -155,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgr-vh-vZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-28" y="1102"/>
+            <point key="canvasLocation" x="427" y="1282"/>
         </scene>
         <!--Ticket-->
         <scene sceneID="s9F-Ts-MIa">
@@ -220,6 +226,7 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Ticket" image="note-write-7" id="djU-AI-NeP"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <segue destination="FXP-EX-l39" kind="presentation" identifier="ftab_to_lg" modalTransitionStyle="crossDissolve" id="ePb-Tw-8tN"/>
                         <segue destination="QE0-gC-xL3" kind="presentation" identifier="submit" modalTransitionStyle="crossDissolve" id="ujb-RZ-Pir"/>
@@ -227,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYh-3A-kCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="520" y="405"/>
+            <point key="canvasLocation" x="452" y="357"/>
         </scene>
         <!--Home-->
         <scene sceneID="c24-NA-YEd">
@@ -273,7 +280,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPQ-MC-CkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="520" y="-507"/>
+            <point key="canvasLocation" x="463" y="-571"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sd5-4E-PLR">
@@ -311,14 +318,14 @@
                         <viewControllerLayoutGuide type="bottom" id="rjG-1C-8US"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Pw0-MZ-U8s">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PJV-c2-dXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1049" y="405"/>
+            <point key="canvasLocation" x="1193" y="405"/>
         </scene>
         <!--View Controller Ticket Submit-->
         <scene sceneID="HsQ-UV-WgA">
@@ -394,7 +401,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m8H-Ee-MJg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="520" y="1390"/>
+            <point key="canvasLocation" x="1115" y="1298"/>
+        </scene>
+        <!--View Controller Ex Sub-->
+        <scene sceneID="Yoh-bQ-hdV">
+            <objects>
+                <viewController id="hPg-b6-FVU" customClass="ViewControllerExSub" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3o9-Hd-cMT"/>
+                        <viewControllerLayoutGuide type="bottom" id="mOw-vl-ZWA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0RD-qT-3iT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kNG-9s-ptG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130" y="1236"/>
         </scene>
     </scenes>
     <resources>
@@ -406,6 +431,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="hpq-sC-jRb"/>
-        <segue reference="ePb-Tw-8tN"/>
+        <segue reference="PKq-JD-QmV"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E02F4731CD181A200C4B742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E02F4721CD181A200C4B742 /* Main.storyboard */; };
+		1E1083291CDBD6D40042493C /* NeededFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1083281CDBD6D40042493C /* NeededFunctions.swift */; };
 		1E214C401CD17DA0009853AA /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E214C3F1CD17DA0009853AA /* Eureka.framework */; };
 		1E35BEA11CD172BE00D2290C /* SwiftForms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E35BEA01CD172BE00D2290C /* SwiftForms.framework */; };
 		1E35BEA71CD1731300D2290C /* IMG_1654.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E35BEA21CD1731300D2290C /* IMG_1654.png */; };
@@ -21,6 +22,7 @@
 		1E35BEB61CD1737700D2290C /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35BEAF1CD1737700D2290C /* ViewControllerHome.swift */; };
 		1E35BEC01CD1767000D2290C /* ViewControllerForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35BEBF1CD1767000D2290C /* ViewControllerForm.swift */; };
 		1E433F801CD2270D008D2A9E /* ViewControllerFormM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E433F7F1CD2270D008D2A9E /* ViewControllerFormM.swift */; };
+		1E50BA2D1CD82CF000615394 /* ViewControllerExSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50BA2C1CD82CF000615394 /* ViewControllerExSub.swift */; };
 		1E52BB391CD7ECEA00C1959D /* ViewControllerExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E52BB381CD7ECEA00C1959D /* ViewControllerExpense.swift */; };
 		1E99DA3A1CD16DCC0027262E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E99DA391CD16DCC0027262E /* Assets.xcassets */; };
 		1E99DA3D1CD16DCC0027262E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E99DA3B1CD16DCC0027262E /* LaunchScreen.storyboard */; };
@@ -51,6 +53,7 @@
 /* Begin PBXFileReference section */
 		042A96052C6F8ADEF67C4325 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		1E02F4721CD181A200C4B742 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1E1083281CDBD6D40042493C /* NeededFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeededFunctions.swift; sourceTree = "<group>"; };
 		1E214C3F1CD17DA0009853AA /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = "../../Library/Developer/Xcode/DerivedData/Luis_Trucking-fedgedipxjjxwdgsidxyoklhqoxj/Build/Products/Debug-iphonesimulator/Eureka.framework"; sourceTree = "<group>"; };
 		1E35BEA01CD172BE00D2290C /* SwiftForms.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftForms.framework; path = "../../Library/Developer/Xcode/DerivedData/Luis_Trucking-fedgedipxjjxwdgsidxyoklhqoxj/Build/Products/Debug-iphonesimulator/SwiftForms.framework"; sourceTree = "<group>"; };
 		1E35BEA21CD1731300D2290C /* IMG_1654.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_1654.png; path = "../../../Desktop/OneDrive - Lake Elsinore Unified School District/IMG_1654.png"; sourceTree = "<group>"; };
@@ -64,6 +67,7 @@
 		1E35BEAF1CD1737700D2290C /* ViewControllerHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerHome.swift; path = "../../Test App/Test App/ViewControllerHome.swift"; sourceTree = "<group>"; };
 		1E35BEBF1CD1767000D2290C /* ViewControllerForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerForm.swift; sourceTree = "<group>"; };
 		1E433F7F1CD2270D008D2A9E /* ViewControllerFormM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFormM.swift; sourceTree = "<group>"; };
+		1E50BA2C1CD82CF000615394 /* ViewControllerExSub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExSub.swift; sourceTree = "<group>"; };
 		1E52BB381CD7ECEA00C1959D /* ViewControllerExpense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExpense.swift; sourceTree = "<group>"; };
 		1E99DA2F1CD16DCC0027262E /* Luis Trucking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Luis Trucking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E99DA391CD16DCC0027262E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -158,10 +162,12 @@
 				1E35BEAD1CD1737700D2290C /* AppDelegate.swift */,
 				1E35BEAE1CD1737700D2290C /* ViewController.swift */,
 				1E35BEAF1CD1737700D2290C /* ViewControllerHome.swift */,
+				1E1083281CDBD6D40042493C /* NeededFunctions.swift */,
 				1E433F7F1CD2270D008D2A9E /* ViewControllerFormM.swift */,
 				1E35BEBF1CD1767000D2290C /* ViewControllerForm.swift */,
 				1EF3F1891CD3FAC200DC82FD /* ViewControllerTicketSubmit.swift */,
 				1E52BB381CD7ECEA00C1959D /* ViewControllerExpense.swift */,
+				1E50BA2C1CD82CF000615394 /* ViewControllerExSub.swift */,
 				1E99DA391CD16DCC0027262E /* Assets.xcassets */,
 				1E99DA3B1CD16DCC0027262E /* LaunchScreen.storyboard */,
 				1E02F4721CD181A200C4B742 /* Main.storyboard */,
@@ -384,7 +390,9 @@
 				1EF3F18C1CD41D8900DC82FD /* DataPull.swift in Sources */,
 				1E52BB391CD7ECEA00C1959D /* ViewControllerExpense.swift in Sources */,
 				1E35BEB51CD1737700D2290C /* ViewController.swift in Sources */,
+				1E1083291CDBD6D40042493C /* NeededFunctions.swift in Sources */,
 				1E35BEB41CD1737700D2290C /* AppDelegate.swift in Sources */,
+				1E50BA2D1CD82CF000615394 /* ViewControllerExSub.swift in Sources */,
 				1E433F801CD2270D008D2A9E /* ViewControllerFormM.swift in Sources */,
 				1E35BEC01CD1767000D2290C /* ViewControllerForm.swift in Sources */,
 				1E35BEB31CD1737700D2290C /* TicketModel.swift in Sources */,

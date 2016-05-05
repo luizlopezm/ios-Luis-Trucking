@@ -7,6 +7,8 @@
 //
 
 import Foundation
+var Connect = true
+
 
 func GetHaulers() -> [String]{
     var RT = [String]()
@@ -34,10 +36,10 @@ func GetHaulers() -> [String]{
         }
         
         var jsonElement:String
-        for(var i = 0; i < jsonResult.count; i++)
+        for jt in jsonResult
         {
             
-            jsonElement = jsonResult[i] as! String
+            jsonElement = jt as! String
         
             RT.append(jsonElement)
         }
@@ -81,10 +83,10 @@ func GetBrokers() -> [String]{
         }
         
         var jsonElement:String
-        for(var i = 0; i < jsonResult.count; i++)
+        for jt in jsonResult
         {
             
-            jsonElement = jsonResult[i] as! String
+            jsonElement = jt as! String
             
             RT.append(jsonElement)
         }
@@ -125,10 +127,10 @@ func GetIDs() -> [String]{
         }
         
         var jsonElement:String
-        for(var i = 0; i < jsonResult.count; i++)
+        for jt in jsonResult
         {
             
-            jsonElement = jsonResult[i] as! String
+            jsonElement = jt as! String
             
             RT.append(jsonElement)
         }
@@ -158,14 +160,14 @@ func SubmitTicket(ticket: TicketModel){
     let semaphore = dispatch_semaphore_create(0)
     
     let log = ticketID + "&" + ticketDate + "&" + ticketRate + "&" + ticketT + "&" + ticketB + "&" + ticketN + "&" + ticketH + "&" + ticketTN + "&" + ticketU
-    print(log)
     let postString = log
     request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
     let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
         guard error == nil && data != nil else {                                                          // check for fundamental networking error
             print("error=\(error)")
             return
-        }
+            
+            }
         
         let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
         
