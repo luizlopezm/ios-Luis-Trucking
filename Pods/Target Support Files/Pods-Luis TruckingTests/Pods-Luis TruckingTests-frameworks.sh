@@ -84,10 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Luis TruckingTests/Charts.framework"
   install_framework "Pods-Luis TruckingTests/Eureka.framework"
   install_framework "Pods-Luis TruckingTests/SwiftForms.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Luis TruckingTests/Charts.framework"
   install_framework "Pods-Luis TruckingTests/Eureka.framework"
   install_framework "Pods-Luis TruckingTests/SwiftForms.framework"
 fi

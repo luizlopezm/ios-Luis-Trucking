@@ -84,10 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods/Charts.framework"
   install_framework "Pods/Eureka.framework"
   install_framework "Pods/SwiftForms.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods/Charts.framework"
   install_framework "Pods/Eureka.framework"
   install_framework "Pods/SwiftForms.framework"
 fi

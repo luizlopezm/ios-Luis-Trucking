@@ -5,6 +5,7 @@
 
 pod 'SwiftForms'
 pod 'Eureka', '~> 1.5'
+pod 'Charts'
 target 'Luis Trucking' do
 
 end

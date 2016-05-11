@@ -99,6 +99,92 @@ func GetBrokers() -> [String]{
     return RT
 }
 
+func GetExpenseType() -> [String]{
+    var RT = [String]()
+    
+    let request = NSMutableURLRequest(URL: NSURL(string: "http://ec2-52-33-225-48.us-west-2.compute.amazonaws.com/iOSGetExpenseType.php")!)
+    //request.HTTPMethod = "POST"
+    
+    let semaphore = dispatch_semaphore_create(0)
+    
+    //request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+    let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+        guard error == nil && data != nil else {                                                          // check for fundamental networking error
+            print("error=\(error)")
+            return
+        }
+        
+        var jsonResult: NSMutableArray = NSMutableArray()
+        
+        do{
+            jsonResult = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.AllowFragments) as! NSMutableArray
+            
+        } catch let error as NSError {
+            print(error)
+            
+        }
+        
+        var jsonElement:String
+        for jt in jsonResult
+        {
+            
+            jsonElement = jt as! String
+            
+            RT.append(jsonElement)
+        }
+        
+        dispatch_semaphore_signal(semaphore)
+        
+    }
+    task.resume()
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER)
+    return RT
+}
+
+
+func GetVendor() -> [String]{
+    var RT = [String]()
+    
+    let request = NSMutableURLRequest(URL: NSURL(string: "http://ec2-52-33-225-48.us-west-2.compute.amazonaws.com/iOSGetVendor.php")!)
+    //request.HTTPMethod = "POST"
+    
+    let semaphore = dispatch_semaphore_create(0)
+    
+    //request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+    let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+        guard error == nil && data != nil else {                                                          // check for fundamental networking error
+            print("error=\(error)")
+            return
+        }
+        
+        var jsonResult: NSMutableArray = NSMutableArray()
+        
+        do{
+            jsonResult = try NSJSONSerialization.JSONObjectWithData(data!, options:NSJSONReadingOptions.AllowFragments) as! NSMutableArray
+            
+        } catch let error as NSError {
+            print(error)
+            
+        }
+        
+        var jsonElement:String
+        for jt in jsonResult
+        {
+            
+            jsonElement = jt as! String
+            
+            RT.append(jsonElement)
+        }
+        
+        dispatch_semaphore_signal(semaphore)
+        
+    }
+    task.resume()
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER)
+    return RT
+}
+
+
 
 
 func GetIDs() -> [String]{

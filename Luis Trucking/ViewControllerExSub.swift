@@ -20,8 +20,8 @@ var Descript = ""
 class ViewControllerExSub: FormViewController {
     
     var TruckIDs = GetIDs()
-    var Expenses = ["temp","In-n-out","fix"]
-    var Vendors = ["78","Arco","Tacos"]
+    var Expenses = GetExpenseType()
+    var Vendors = GetVendor()
 
     override func viewDidLoad() {
         super.viewDidLoad()

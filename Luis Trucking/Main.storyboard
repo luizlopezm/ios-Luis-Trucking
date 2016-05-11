@@ -9,6 +9,7 @@
         <mutableArray key="RobotoSlab-Light.ttf">
             <string>RobotoSlab-Light</string>
             <string>RobotoSlab-Light</string>
+            <string>RobotoSlab-Light</string>
         </mutableArray>
         <mutableArray key="RobotoSlab-Regular.ttf">
             <string>RobotoSlab-Regular</string>
@@ -126,6 +127,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fe6-IW-P0v">
+                                <rect key="frame" x="0.0" y="60" width="414" height="627"/>
+                                <connections>
+                                    <segue destination="hPg-b6-FVU" kind="embed" id="bNP-ve-zIr"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ai4-r7-ggE">
+                                <rect key="frame" x="151" y="529.5" width="112" height="39"/>
+                                <color key="backgroundColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="112" id="E3T-d8-ujQ"/>
+                                    <constraint firstAttribute="height" constant="39" id="cL7-WX-yzA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="20"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Submit:" destination="JrX-6K-d9S" eventType="touchUpInside" id="NhR-ta-WiN"/>
+                                </connections>
+                            </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Ji-Kt-vMF">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -143,14 +166,15 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="barTintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
-                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fe6-IW-P0v">
-                                <rect key="frame" x="0.0" y="60" width="414" height="627"/>
-                                <connections>
-                                    <segue destination="hPg-b6-FVU" kind="embed" id="bNP-ve-zIr"/>
-                                </connections>
-                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Fe6-IW-P0v" firstAttribute="leading" secondItem="eMO-Ye-HBb" secondAttribute="leadingMargin" constant="-20" id="9gr-EB-QpZ"/>
+                            <constraint firstItem="ai4-r7-ggE" firstAttribute="centerX" secondItem="eMO-Ye-HBb" secondAttribute="centerX" id="BaO-Ow-XFZ"/>
+                            <constraint firstItem="xzs-YN-Hqb" firstAttribute="top" secondItem="ai4-r7-ggE" secondAttribute="bottom" constant="118.5" id="bT9-VO-GXg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4Ji-Kt-vMF" secondAttribute="trailing" constant="-20" id="fTh-c4-igU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fe6-IW-P0v" secondAttribute="trailing" constant="-20" id="pdg-TJ-DxS"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Expense" image="wallet-7" id="BaE-QX-GXo"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -220,7 +244,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="uLS-RN-zli" secondAttribute="trailing" constant="-20" id="BHD-e3-Gwm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rbl-aD-oqN" secondAttribute="trailing" constant="-20" id="G7l-fn-RXs"/>
                             <constraint firstItem="Aj9-4y-AJw" firstAttribute="centerX" secondItem="dlR-qf-x8m" secondAttribute="centerX" id="Jfo-oO-NqC"/>
-                            <constraint firstItem="Aj9-4y-AJw" firstAttribute="centerY" secondItem="dlR-qf-x8m" secondAttribute="centerY" constant="230" id="PNj-qt-x9t"/>
+                            <constraint firstItem="r0n-qp-awP" firstAttribute="top" secondItem="Aj9-4y-AJw" secondAttribute="bottom" constant="118.5" id="fQH-9P-VFl"/>
                             <constraint firstItem="rbl-aD-oqN" firstAttribute="leading" secondItem="dlR-qf-x8m" secondAttribute="leadingMargin" constant="-20" id="fiP-fM-wcs"/>
                             <constraint firstItem="uLS-RN-zli" firstAttribute="leading" secondItem="dlR-qf-x8m" secondAttribute="leadingMargin" constant="-20" id="jkc-qX-X2g"/>
                         </constraints>
