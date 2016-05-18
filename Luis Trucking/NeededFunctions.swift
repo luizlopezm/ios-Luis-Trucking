@@ -21,3 +21,26 @@ func ApprovedTickets(currTick: [TicketModel]) -> Int {
     return ticketCount
     
 }
+
+func TotalTickets(currTick: [TicketModel]) -> Int {
+    var ticketCount = 0;
+    
+    ticketCount = currTick.count
+    
+    return ticketCount
+    
+}
+
+func UnapprovedTickets(currTick: [TicketModel]) -> Int {
+    var ticketCount = 0;
+    
+    for ticket in currTick{
+        if(ticket.approval == "0")
+        {
+            ticketCount += 1
+        }
+        
+    }
+    return ticketCount
+    
+}

@@ -17,7 +17,7 @@ var Broker = ""
 var Tons = ""
 
 
-class ViewControllerFormM : FormViewController{
+class ViewControllerTickSub : FormViewController{
     
     var Haulers = GetHaulers()
     var Brokers = GetBrokers()

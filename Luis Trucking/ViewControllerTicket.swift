@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewControllerForm: UIViewController {
+class ViewControllerTicket: UIViewController {
     
     @IBAction func logout(sender: UIBarButtonItem) {
         self.performSegueWithIdentifier("ftab_to_lg", sender: sender)

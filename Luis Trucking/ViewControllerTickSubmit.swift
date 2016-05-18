@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewControllerTicketSubmit: UIViewController {
+class ViewControllerTickSubmit: UIViewController {
     @IBAction func back(sender: UIBarButtonItem) {
         self.performSegueWithIdentifier("hm", sender: sender)
         
@@ -32,7 +32,7 @@ class ViewControllerTicketSubmit: UIViewController {
         
         let date = NSDate()
         let dateFormatter = NSDateFormatter()
-        dateFormatter.dateFormat = "dd/M/yyyy, hh:mm aa"
+        dateFormatter.dateFormat = "M/dd/yyyy, hh:mm aa"
         subm.text = dateFormatter.stringFromDate(date)
         
         

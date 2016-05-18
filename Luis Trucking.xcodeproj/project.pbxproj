@@ -20,15 +20,18 @@
 		1E35BEB41CD1737700D2290C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35BEAD1CD1737700D2290C /* AppDelegate.swift */; };
 		1E35BEB51CD1737700D2290C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35BEAE1CD1737700D2290C /* ViewController.swift */; };
 		1E35BEB61CD1737700D2290C /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35BEAF1CD1737700D2290C /* ViewControllerHome.swift */; };
-		1E35BEC01CD1767000D2290C /* ViewControllerForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35BEBF1CD1767000D2290C /* ViewControllerForm.swift */; };
-		1E433F801CD2270D008D2A9E /* ViewControllerFormM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E433F7F1CD2270D008D2A9E /* ViewControllerFormM.swift */; };
+		1E35BEC01CD1767000D2290C /* ViewControllerTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E35BEBF1CD1767000D2290C /* ViewControllerTicket.swift */; };
+		1E433F801CD2270D008D2A9E /* ViewControllerTickSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E433F7F1CD2270D008D2A9E /* ViewControllerTickSub.swift */; };
 		1E50BA2D1CD82CF000615394 /* ViewControllerExSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E50BA2C1CD82CF000615394 /* ViewControllerExSub.swift */; };
 		1E52BB391CD7ECEA00C1959D /* ViewControllerExpense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E52BB381CD7ECEA00C1959D /* ViewControllerExpense.swift */; };
+		1E6488E61CEA11F2006CA5E0 /* ExpenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6488E51CEA11F2006CA5E0 /* ExpenseModel.swift */; };
+		1E6488E81CEA17D3006CA5E0 /* ViewControllerExSubmit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6488E71CEA17D3006CA5E0 /* ViewControllerExSubmit.swift */; };
+		1E6488EA1CEA40E2006CA5E0 /* ViewControllerCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6488E91CEA40E2006CA5E0 /* ViewControllerCharts.swift */; };
 		1E99DA3A1CD16DCC0027262E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E99DA391CD16DCC0027262E /* Assets.xcassets */; };
 		1E99DA3D1CD16DCC0027262E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E99DA3B1CD16DCC0027262E /* LaunchScreen.storyboard */; };
 		1E99DA481CD16DCC0027262E /* Luis_TruckingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99DA471CD16DCC0027262E /* Luis_TruckingTests.swift */; };
 		1E99DA531CD16DCC0027262E /* Luis_TruckingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99DA521CD16DCC0027262E /* Luis_TruckingUITests.swift */; };
-		1EF3F18A1CD3FAC200DC82FD /* ViewControllerTicketSubmit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3F1891CD3FAC200DC82FD /* ViewControllerTicketSubmit.swift */; };
+		1EF3F18A1CD3FAC200DC82FD /* ViewControllerTickSubmit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3F1891CD3FAC200DC82FD /* ViewControllerTickSubmit.swift */; };
 		1EF3F18C1CD41D8900DC82FD /* DataPull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3F18B1CD41D8900DC82FD /* DataPull.swift */; };
 		F4D6903CDECBF478BBB1CD82 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6252E68205D3668AEDA7CDEC /* Pods.framework */; };
 /* End PBXBuildFile section */
@@ -65,10 +68,13 @@
 		1E35BEAD1CD1737700D2290C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = "../../Test App/Test App/AppDelegate.swift"; sourceTree = "<group>"; };
 		1E35BEAE1CD1737700D2290C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../Test App/Test App/ViewController.swift"; sourceTree = "<group>"; };
 		1E35BEAF1CD1737700D2290C /* ViewControllerHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerHome.swift; path = "../../Test App/Test App/ViewControllerHome.swift"; sourceTree = "<group>"; };
-		1E35BEBF1CD1767000D2290C /* ViewControllerForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerForm.swift; sourceTree = "<group>"; };
-		1E433F7F1CD2270D008D2A9E /* ViewControllerFormM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerFormM.swift; sourceTree = "<group>"; };
+		1E35BEBF1CD1767000D2290C /* ViewControllerTicket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTicket.swift; sourceTree = "<group>"; };
+		1E433F7F1CD2270D008D2A9E /* ViewControllerTickSub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTickSub.swift; sourceTree = "<group>"; };
 		1E50BA2C1CD82CF000615394 /* ViewControllerExSub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExSub.swift; sourceTree = "<group>"; };
 		1E52BB381CD7ECEA00C1959D /* ViewControllerExpense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExpense.swift; sourceTree = "<group>"; };
+		1E6488E51CEA11F2006CA5E0 /* ExpenseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseModel.swift; sourceTree = "<group>"; };
+		1E6488E71CEA17D3006CA5E0 /* ViewControllerExSubmit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExSubmit.swift; sourceTree = "<group>"; };
+		1E6488E91CEA40E2006CA5E0 /* ViewControllerCharts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCharts.swift; sourceTree = "<group>"; };
 		1E99DA2F1CD16DCC0027262E /* Luis Trucking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Luis Trucking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E99DA391CD16DCC0027262E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E99DA3C1CD16DCC0027262E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -79,7 +85,7 @@
 		1E99DA4E1CD16DCC0027262E /* Luis TruckingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Luis TruckingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E99DA521CD16DCC0027262E /* Luis_TruckingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Luis_TruckingUITests.swift; sourceTree = "<group>"; };
 		1E99DA541CD16DCC0027262E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1EF3F1891CD3FAC200DC82FD /* ViewControllerTicketSubmit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTicketSubmit.swift; sourceTree = "<group>"; };
+		1EF3F1891CD3FAC200DC82FD /* ViewControllerTickSubmit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTickSubmit.swift; sourceTree = "<group>"; };
 		1EF3F18B1CD41D8900DC82FD /* DataPull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPull.swift; sourceTree = "<group>"; };
 		6252E68205D3668AEDA7CDEC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75CD4416362B08595EFDB7E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,16 +164,19 @@
 			isa = PBXGroup;
 			children = (
 				1E35BEAC1CD1737700D2290C /* TicketModel.swift */,
+				1E6488E51CEA11F2006CA5E0 /* ExpenseModel.swift */,
 				1EF3F18B1CD41D8900DC82FD /* DataPull.swift */,
 				1E35BEAD1CD1737700D2290C /* AppDelegate.swift */,
 				1E35BEAE1CD1737700D2290C /* ViewController.swift */,
 				1E35BEAF1CD1737700D2290C /* ViewControllerHome.swift */,
+				1E6488E91CEA40E2006CA5E0 /* ViewControllerCharts.swift */,
 				1E1083281CDBD6D40042493C /* NeededFunctions.swift */,
-				1E433F7F1CD2270D008D2A9E /* ViewControllerFormM.swift */,
-				1E35BEBF1CD1767000D2290C /* ViewControllerForm.swift */,
-				1EF3F1891CD3FAC200DC82FD /* ViewControllerTicketSubmit.swift */,
+				1E433F7F1CD2270D008D2A9E /* ViewControllerTickSub.swift */,
+				1E35BEBF1CD1767000D2290C /* ViewControllerTicket.swift */,
+				1EF3F1891CD3FAC200DC82FD /* ViewControllerTickSubmit.swift */,
 				1E52BB381CD7ECEA00C1959D /* ViewControllerExpense.swift */,
 				1E50BA2C1CD82CF000615394 /* ViewControllerExSub.swift */,
+				1E6488E71CEA17D3006CA5E0 /* ViewControllerExSubmit.swift */,
 				1E99DA391CD16DCC0027262E /* Assets.xcassets */,
 				1E99DA3B1CD16DCC0027262E /* LaunchScreen.storyboard */,
 				1E02F4721CD181A200C4B742 /* Main.storyboard */,
@@ -388,15 +397,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EF3F18C1CD41D8900DC82FD /* DataPull.swift in Sources */,
+				1E6488EA1CEA40E2006CA5E0 /* ViewControllerCharts.swift in Sources */,
 				1E52BB391CD7ECEA00C1959D /* ViewControllerExpense.swift in Sources */,
 				1E35BEB51CD1737700D2290C /* ViewController.swift in Sources */,
 				1E1083291CDBD6D40042493C /* NeededFunctions.swift in Sources */,
 				1E35BEB41CD1737700D2290C /* AppDelegate.swift in Sources */,
 				1E50BA2D1CD82CF000615394 /* ViewControllerExSub.swift in Sources */,
-				1E433F801CD2270D008D2A9E /* ViewControllerFormM.swift in Sources */,
-				1E35BEC01CD1767000D2290C /* ViewControllerForm.swift in Sources */,
+				1E6488E61CEA11F2006CA5E0 /* ExpenseModel.swift in Sources */,
+				1E433F801CD2270D008D2A9E /* ViewControllerTickSub.swift in Sources */,
+				1E35BEC01CD1767000D2290C /* ViewControllerTicket.swift in Sources */,
 				1E35BEB31CD1737700D2290C /* TicketModel.swift in Sources */,
-				1EF3F18A1CD3FAC200DC82FD /* ViewControllerTicketSubmit.swift in Sources */,
+				1E6488E81CEA17D3006CA5E0 /* ViewControllerExSubmit.swift in Sources */,
+				1EF3F18A1CD3FAC200DC82FD /* ViewControllerTickSubmit.swift in Sources */,
 				1E35BEB61CD1737700D2290C /* ViewControllerHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,7 +495,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};

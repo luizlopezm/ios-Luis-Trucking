@@ -1,29 +1,19 @@
 //
-//  ViewControllerExpense.swift
+//  ViewControllerCharts.swift
 //  Luis Trucking
 //
-//  Created by Luiz Lopez on 5/2/16.
+//  Created by Luiz Lopez on 5/16/16.
 //  Copyright © 2016 Luis Trucking. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerExpense: UIViewController {
+class ViewControllerCharts: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-    
-    }
-    
-    
-    @IBAction func log_t(sender: UIBarButtonItem) {
-        self.performSegueWithIdentifier("logoff", sender: sender)
-    }
-    
-    @IBAction func SubExpense(sender: UIButton) {
-        self.performSegueWithIdentifier("subex", sender: sender)
     }
 
     override func didReceiveMemoryWarning() {

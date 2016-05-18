@@ -40,7 +40,7 @@ class ViewControllerExSub: FormViewController {
             <<< ActionSheetRow<String>("Vender") {$0.title = "Vender: ";$0.selectorTitle = "Please Select a Vender:"; $0.options = Vendors; $0.value = Vendors[0]}.onChange{row in Vendor = row.value!}
             <<< DateRow("Date") {$0.title = "Date: " ; $0.value = NSDate()}.onChange{row in Date2 = dateFormatter.stringFromDate(row.value!)}
             <<< TextRow("Amount") { $0.title = "Amount:"}.onChange{row in if row.value != nil{Amount2 = row.value!}}
-            <<< TextAreaRow("Des"){ $0.title = "Description:"}.onChange{row in if row.value != nil{Descript = row.value!}}
+            <<< TextAreaRow("Des"){$0.placeholder = "Description"}.onChange{row in if row.value != nil{Descript = row.value!}}
         
         
         

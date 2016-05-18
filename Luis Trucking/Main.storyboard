@@ -14,6 +14,7 @@
         <mutableArray key="RobotoSlab-Regular.ttf">
             <string>RobotoSlab-Regular</string>
             <string>RobotoSlab-Regular</string>
+            <string>RobotoSlab-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -115,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="-568" y="-65"/>
         </scene>
-        <!--Expense Scene-->
+        <!--Expense-->
         <scene sceneID="5gY-lt-v4G">
             <objects>
-                <viewController title="Expense Scene" id="RSr-TC-gOW" customClass="ViewControllerExpense" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Expense" id="RSr-TC-gOW" customClass="ViewControllerExpense" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AOh-oh-aFm"/>
                         <viewControllerLayoutGuide type="bottom" id="xzs-YN-Hqb"/>
@@ -130,7 +131,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fe6-IW-P0v">
                                 <rect key="frame" x="0.0" y="60" width="414" height="627"/>
                                 <connections>
-                                    <segue destination="hPg-b6-FVU" kind="embed" id="bNP-ve-zIr"/>
+                                    <segue destination="hPg-b6-FVU" kind="embed" id="sf7-cH-j9Z"/>
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ai4-r7-ggE">
@@ -146,6 +147,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="SubExpense:" destination="RSr-TC-gOW" eventType="touchUpInside" id="rFs-vg-jlF"/>
                                     <action selector="Submit:" destination="JrX-6K-d9S" eventType="touchUpInside" id="NhR-ta-WiN"/>
                                 </connections>
                             </button>
@@ -156,7 +158,11 @@
                                     <constraint firstAttribute="height" constant="60" id="awV-pp-OkR"/>
                                 </constraints>
                                 <items>
-                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Myy-XY-abV"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Myy-XY-abV">
+                                        <connections>
+                                            <segue destination="cRA-GH-huI" kind="presentation" identifier="subex" modalTransitionStyle="crossDissolve" id="a5c-nN-Hi3"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem title="Logout" width="70" id="Ean-Va-7Xx">
                                         <connections>
                                             <action selector="log_t:" destination="RSr-TC-gOW" id="Enp-sD-Hct"/>
@@ -180,17 +186,17 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <segue destination="FXP-EX-l39" kind="presentation" identifier="logoff" id="PKq-JD-QmV"/>
+                        <segue destination="FXP-EX-l39" kind="presentation" identifier="logoff" modalTransitionStyle="crossDissolve" id="PKq-JD-QmV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgr-vh-vZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="427" y="1282"/>
+            <point key="canvasLocation" x="276" y="1258"/>
         </scene>
         <!--Ticket-->
         <scene sceneID="s9F-Ts-MIa">
             <objects>
-                <viewController title="Ticket" id="JrX-6K-d9S" customClass="ViewControllerForm" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Ticket" id="JrX-6K-d9S" customClass="ViewControllerTicket" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zMi-vv-vVZ"/>
                         <viewControllerLayoutGuide type="bottom" id="r0n-qp-awP"/>
@@ -289,22 +295,34 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="barTintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9NR-AJ-EdL" customClass="PieChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="75" width="414" height="323"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="ej7-gP-Ycm"/>
+                                    <constraint firstAttribute="height" constant="323" id="hb3-bk-glj"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="fap-bj-eCy" secondAttribute="trailing" constant="-20" id="48k-gK-6hl"/>
                             <constraint firstItem="fap-bj-eCy" firstAttribute="leading" secondItem="61O-Jq-Fl9" secondAttribute="leadingMargin" constant="-20" id="6C3-xs-eVb"/>
+                            <constraint firstItem="9NR-AJ-EdL" firstAttribute="top" secondItem="fap-bj-eCy" secondAttribute="bottom" constant="20" id="Zit-dO-59c"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9NR-AJ-EdL" secondAttribute="trailing" constant="-15" id="gcj-1L-KSt"/>
+                            <constraint firstItem="9NR-AJ-EdL" firstAttribute="leading" secondItem="61O-Jq-Fl9" secondAttribute="leadingMargin" constant="-15" id="iBL-c9-1IS"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home-7" id="hZD-S5-tZp"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="PieChart" destination="9NR-AJ-EdL" id="veD-qw-W15"/>
                         <segue destination="FXP-EX-l39" kind="presentation" identifier="htab_to_lg" modalTransitionStyle="crossDissolve" id="eoZ-qK-8Up"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TPQ-MC-CkP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="463" y="-571"/>
+            <point key="canvasLocation" x="452" y="-482"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sd5-4E-PLR">
@@ -333,10 +351,10 @@
             </objects>
             <point key="canvasLocation" x="-28" y="-45"/>
         </scene>
-        <!--View Controller FormM-->
+        <!--Tick Sub-->
         <scene sceneID="EOK-XG-SDF">
             <objects>
-                <viewController id="C7a-za-kGv" customClass="ViewControllerFormM" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Tick Sub" id="C7a-za-kGv" customClass="ViewControllerTickSub" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Jfr-b1-Kk2"/>
                         <viewControllerLayoutGuide type="bottom" id="rjG-1C-8US"/>
@@ -349,12 +367,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PJV-c2-dXZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1193" y="405"/>
+            <point key="canvasLocation" x="1137" y="369"/>
         </scene>
-        <!--View Controller Ticket Submit-->
+        <!--Tick Submit-->
         <scene sceneID="HsQ-UV-WgA">
             <objects>
-                <viewController id="QE0-gC-xL3" customClass="ViewControllerTicketSubmit" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Tick Submit" id="QE0-gC-xL3" customClass="ViewControllerTickSubmit" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Am-OB-b2i"/>
                         <viewControllerLayoutGuide type="bottom" id="lyD-1M-ngt"/>
@@ -427,10 +445,10 @@
             </objects>
             <point key="canvasLocation" x="1115" y="1298"/>
         </scene>
-        <!--View Controller Ex Sub-->
+        <!--Ex Sub-->
         <scene sceneID="Yoh-bQ-hdV">
             <objects>
-                <viewController id="hPg-b6-FVU" customClass="ViewControllerExSub" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Ex Sub" id="hPg-b6-FVU" customClass="ViewControllerExSub" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3o9-Hd-cMT"/>
                         <viewControllerLayoutGuide type="bottom" id="mOw-vl-ZWA"/>
@@ -443,7 +461,84 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNG-9s-ptG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-130" y="1236"/>
+            <point key="canvasLocation" x="-371" y="1300.5"/>
+        </scene>
+        <!--Ex Submit-->
+        <scene sceneID="Qpc-47-Hy0">
+            <objects>
+                <viewController title="Ex Submit" id="cRA-GH-huI" customClass="ViewControllerExSubmit" customModule="Luis_Trucking" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k3X-hb-VpU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ckf-ba-2ph"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dKc-Vh-gLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="grenc" translatesAutoresizingMaskIntoConstraints="NO" id="jJ0-We-2Gd">
+                                <rect key="frame" x="107" y="218" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="1I7-Nf-iZr"/>
+                                    <constraint firstAttribute="width" constant="200" id="KUs-s3-7qW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Expense was successfully submitted on:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kla-fW-uHm">
+                                <rect key="frame" x="79.5" y="465" width="255" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="PaE-EH-9Cj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="17"/>
+                                <color key="textColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ld-Bs-Lwh">
+                                <rect key="frame" x="202" y="490" width="150" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="sQb-VQ-wM8"/>
+                                    <constraint firstAttribute="width" constant="150" id="tLf-d4-pmZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sfg-gT-eRY">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="60"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="TA9-Qx-CZl"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="&lt; Back" width="70" id="FCb-HV-Hh0">
+                                        <connections>
+                                            <action selector="back:" destination="cRA-GH-huI" id="pWE-KR-21M"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="L4I-fr-7JK"/>
+                                </items>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Ld-Bs-Lwh" firstAttribute="centerX" secondItem="dKc-Vh-gLQ" secondAttribute="centerX" constant="70" id="Anh-ad-9va"/>
+                            <constraint firstItem="jJ0-We-2Gd" firstAttribute="centerX" secondItem="dKc-Vh-gLQ" secondAttribute="centerX" id="IdU-jP-Pl4"/>
+                            <constraint firstItem="Kla-fW-uHm" firstAttribute="centerX" secondItem="dKc-Vh-gLQ" secondAttribute="centerX" id="PWf-gn-3G4"/>
+                            <constraint firstItem="Kla-fW-uHm" firstAttribute="centerY" secondItem="dKc-Vh-gLQ" secondAttribute="centerY" constant="120" id="YFa-sj-185"/>
+                            <constraint firstItem="3Ld-Bs-Lwh" firstAttribute="centerY" secondItem="dKc-Vh-gLQ" secondAttribute="centerY" constant="132" id="c8n-Ap-YeY"/>
+                            <constraint firstItem="jJ0-We-2Gd" firstAttribute="centerY" secondItem="dKc-Vh-gLQ" secondAttribute="centerY" constant="-50" id="oCI-Yv-Dkr"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="Subm" destination="3Ld-Bs-Lwh" id="pqd-hK-gxn"/>
+                        <outlet property="subm" destination="3Ld-Bs-Lwh" id="eex-Dn-HJ9"/>
+                        <segue destination="lqZ-lT-Ukc" kind="presentation" identifier="hm2" modalTransitionStyle="crossDissolve" id="G1s-Im-q7w"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HIN-z5-3Aw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="287" y="2178"/>
         </scene>
     </scenes>
     <resources>
@@ -454,7 +549,7 @@
         <image name="wallet-7" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="hpq-sC-jRb"/>
-        <segue reference="PKq-JD-QmV"/>
+        <segue reference="G1s-Im-q7w"/>
+        <segue reference="eoZ-qK-8Up"/>
     </inferredMetricsTieBreakers>
 </document>

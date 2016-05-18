@@ -266,3 +266,41 @@ func SubmitTicket(ticket: TicketModel){
     dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER)
    
 }
+
+func SubmitExpense(Expense: ExpenseModel){
+    let request = NSMutableURLRequest(URL: NSURL(string: "http://ec2-52-33-225-48.us-west-2.compute.amazonaws.com/iOSUploadExpense.php")!)
+    request.HTTPMethod = "POST"
+    
+     let ticketU: String = "login=" + templg
+     let ticketN: String = "name=" + Expense.drivername!
+     let ticketT: String = "truckid=" + Expense.truckid!
+     let ticketID: String = "vendor=" + Expense.vendorname!
+     let ticketRate: String = "expensetype=" + Expense.expensetype!
+     let ticketB: String = "amount=" + Expense.amount!
+     let ticketTN: String = "description=" + Expense.details!
+     let ticketDate: String = "date=" + Expense.expensedate!
+
+    
+    let semaphore = dispatch_semaphore_create(0)
+    
+    let log = ticketU + "&" + ticketN + "&" + ticketT + "&" + ticketID + "&" + ticketRate + "&" + ticketB + "&" + ticketTN + "&" + ticketDate
+    let postString = log
+    request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+    let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
+        guard error == nil && data != nil else {                                                          // check for fundamental networking error
+            print("error=\(error)")
+            return
+            
+        }
+        
+        let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
+        
+        
+        print(responseString) //200 Good
+        dispatch_semaphore_signal(semaphore)
+        
+    }
+    task.resume()
+    dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER)
+    
+}
