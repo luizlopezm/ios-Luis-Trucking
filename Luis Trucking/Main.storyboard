@@ -10,6 +10,8 @@
             <string>RobotoSlab-Light</string>
             <string>RobotoSlab-Light</string>
             <string>RobotoSlab-Light</string>
+            <string>RobotoSlab-Light</string>
+            <string>RobotoSlab-Light</string>
         </mutableArray>
         <mutableArray key="RobotoSlab-Regular.ttf">
             <string>RobotoSlab-Regular</string>
@@ -296,19 +298,31 @@
                                 <color key="barTintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9NR-AJ-EdL" customClass="PieChartView" customModule="Charts">
-                                <rect key="frame" x="0.0" y="75" width="414" height="323"/>
+                                <rect key="frame" x="0.0" y="122" width="414" height="323"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="ej7-gP-Ycm"/>
                                     <constraint firstAttribute="height" constant="323" id="hb3-bk-glj"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="At a Glance, Hi  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEJ-0a-lgN">
+                                <rect key="frame" x="20" y="77" width="182" height="37"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="25"/>
+                                <color key="textColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfy-2U-6Vn">
+                                <rect key="frame" x="195" y="82" width="199" height="27"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="25"/>
+                                <color key="textColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="fap-bj-eCy" secondAttribute="trailing" constant="-20" id="48k-gK-6hl"/>
                             <constraint firstItem="fap-bj-eCy" firstAttribute="leading" secondItem="61O-Jq-Fl9" secondAttribute="leadingMargin" constant="-20" id="6C3-xs-eVb"/>
-                            <constraint firstItem="9NR-AJ-EdL" firstAttribute="top" secondItem="fap-bj-eCy" secondAttribute="bottom" constant="20" id="Zit-dO-59c"/>
+                            <constraint firstItem="9NR-AJ-EdL" firstAttribute="top" secondItem="fap-bj-eCy" secondAttribute="bottom" constant="62" id="Zit-dO-59c"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9NR-AJ-EdL" secondAttribute="trailing" constant="-15" id="gcj-1L-KSt"/>
                             <constraint firstItem="9NR-AJ-EdL" firstAttribute="leading" secondItem="61O-Jq-Fl9" secondAttribute="leadingMargin" constant="-15" id="iBL-c9-1IS"/>
                         </constraints>
@@ -317,6 +331,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="PieChart" destination="9NR-AJ-EdL" id="veD-qw-W15"/>
+                        <outlet property="home_name" destination="gfy-2U-6Vn" id="Sc9-D7-4ac"/>
                         <segue destination="FXP-EX-l39" kind="presentation" identifier="htab_to_lg" modalTransitionStyle="crossDissolve" id="eoZ-qK-8Up"/>
                     </connections>
                 </viewController>
