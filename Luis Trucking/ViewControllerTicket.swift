@@ -15,7 +15,24 @@ class ViewControllerTicket: UIViewController {
         
     }
     @IBAction func Submit(sender: UIButton) {
-        self.performSegueWithIdentifier("submit", sender: sender)
+        let tick = TicketModel()
+        
+        tick.ticketid = TicketID
+        tick.ticketdate = Date
+        tick.rate = Pay
+        tick.total = Tons
+        tick.drivername = Name
+        tick.truckid = truckID
+        tick.brokername = Broker
+        tick.haulername = Hauler
+        if(SubmitTicket(tick))
+        {
+            self.performSegueWithIdentifier("submit", sender: sender)
+        }
+        else
+        {
+            self.performSegueWithIdentifier("submitF", sender: sender)
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -18,16 +18,6 @@ class ViewControllerExSubmit: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let expense = ExpenseModel()
-        
-        expense.expensedate = Date2
-        expense.truckid = TruckID2
-        expense.expensetype = ExpenseT
-        expense.drivername = Name
-        expense.vendorname = Vendor
-        expense.details = Descript
-        expense.amount = Amount2
-        SubmitExpense(expense)
         
         let date = NSDate()
         let dateFormatter = NSDateFormatter()

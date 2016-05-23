@@ -1,31 +1,30 @@
 //
-//  ViewControllerTicketSubmit.swift
+//  ViewControllerExSubmitF.swift
 //  Luis Trucking
 //
-//  Created by Luiz Lopez on 4/29/16.
+//  Created by Luiz Lopez on 5/23/16.
 //  Copyright © 2016 Luis Trucking. All rights reserved.
 //
 
 import UIKit
 
-class ViewControllerTickSubmit: UIViewController {
+class ViewControllerExSubmitF: UIViewController {
+
+    @IBOutlet weak var Subm: UILabel!
     
     @IBAction func back(sender: UIBarButtonItem) {
-        self.performSegueWithIdentifier("hm", sender: sender)
+
+        self.performSegueWithIdentifier("hm2_1", sender: sender)
         
     }
-
-    @IBOutlet weak var subm: UILabel!
-
-    override func viewDidLoad(){
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         let date = NSDate()
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "M/dd/yyyy, hh:mm aa"
-        subm.text = dateFormatter.stringFromDate(date)
-        
+        Subm.text = dateFormatter.stringFromDate(date)
+      
         // Do any additional setup after loading the view.
     }
 

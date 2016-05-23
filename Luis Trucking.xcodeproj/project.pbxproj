@@ -10,6 +10,8 @@
 		1E02F4731CD181A200C4B742 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E02F4721CD181A200C4B742 /* Main.storyboard */; };
 		1E1083291CDBD6D40042493C /* NeededFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1083281CDBD6D40042493C /* NeededFunctions.swift */; };
 		1E214C401CD17DA0009853AA /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E214C3F1CD17DA0009853AA /* Eureka.framework */; };
+		1E32B8D01CF2FCDB00D0DC9F /* ViewControllerExSubmitF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32B8CF1CF2FCDB00D0DC9F /* ViewControllerExSubmitF.swift */; };
+		1E32B8D21CF300BE00D0DC9F /* ViewControllerTickSubmitF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E32B8D11CF300BE00D0DC9F /* ViewControllerTickSubmitF.swift */; };
 		1E35BEA11CD172BE00D2290C /* SwiftForms.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E35BEA01CD172BE00D2290C /* SwiftForms.framework */; };
 		1E35BEA71CD1731300D2290C /* IMG_1654.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E35BEA21CD1731300D2290C /* IMG_1654.png */; };
 		1E35BEA81CD1731300D2290C /* RobotoSlab-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E35BEA31CD1731300D2290C /* RobotoSlab-Thin.ttf */; };
@@ -58,6 +60,8 @@
 		1E02F4721CD181A200C4B742 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		1E1083281CDBD6D40042493C /* NeededFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeededFunctions.swift; sourceTree = "<group>"; };
 		1E214C3F1CD17DA0009853AA /* Eureka.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Eureka.framework; path = "../../Library/Developer/Xcode/DerivedData/Luis_Trucking-fedgedipxjjxwdgsidxyoklhqoxj/Build/Products/Debug-iphonesimulator/Eureka.framework"; sourceTree = "<group>"; };
+		1E32B8CF1CF2FCDB00D0DC9F /* ViewControllerExSubmitF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExSubmitF.swift; sourceTree = "<group>"; };
+		1E32B8D11CF300BE00D0DC9F /* ViewControllerTickSubmitF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTickSubmitF.swift; sourceTree = "<group>"; };
 		1E35BEA01CD172BE00D2290C /* SwiftForms.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftForms.framework; path = "../../Library/Developer/Xcode/DerivedData/Luis_Trucking-fedgedipxjjxwdgsidxyoklhqoxj/Build/Products/Debug-iphonesimulator/SwiftForms.framework"; sourceTree = "<group>"; };
 		1E35BEA21CD1731300D2290C /* IMG_1654.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IMG_1654.png; path = "../../../Desktop/OneDrive - Lake Elsinore Unified School District/IMG_1654.png"; sourceTree = "<group>"; };
 		1E35BEA31CD1731300D2290C /* RobotoSlab-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "RobotoSlab-Thin.ttf"; path = "../../../Downloads/roboto-slab/RobotoSlab-Thin.ttf"; sourceTree = "<group>"; };
@@ -174,9 +178,11 @@
 				1E433F7F1CD2270D008D2A9E /* ViewControllerTickSub.swift */,
 				1E35BEBF1CD1767000D2290C /* ViewControllerTicket.swift */,
 				1EF3F1891CD3FAC200DC82FD /* ViewControllerTickSubmit.swift */,
+				1E32B8D11CF300BE00D0DC9F /* ViewControllerTickSubmitF.swift */,
 				1E52BB381CD7ECEA00C1959D /* ViewControllerExpense.swift */,
 				1E50BA2C1CD82CF000615394 /* ViewControllerExSub.swift */,
 				1E6488E71CEA17D3006CA5E0 /* ViewControllerExSubmit.swift */,
+				1E32B8CF1CF2FCDB00D0DC9F /* ViewControllerExSubmitF.swift */,
 				1E99DA391CD16DCC0027262E /* Assets.xcassets */,
 				1E99DA3B1CD16DCC0027262E /* LaunchScreen.storyboard */,
 				1E02F4721CD181A200C4B742 /* Main.storyboard */,
@@ -396,6 +402,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E32B8D01CF2FCDB00D0DC9F /* ViewControllerExSubmitF.swift in Sources */,
 				1EF3F18C1CD41D8900DC82FD /* DataPull.swift in Sources */,
 				1E6488EA1CEA40E2006CA5E0 /* ViewControllerCharts.swift in Sources */,
 				1E52BB391CD7ECEA00C1959D /* ViewControllerExpense.swift in Sources */,
@@ -409,6 +416,7 @@
 				1E35BEB31CD1737700D2290C /* TicketModel.swift in Sources */,
 				1E6488E81CEA17D3006CA5E0 /* ViewControllerExSubmit.swift in Sources */,
 				1EF3F18A1CD3FAC200DC82FD /* ViewControllerTickSubmit.swift in Sources */,
+				1E32B8D21CF300BE00D0DC9F /* ViewControllerTickSubmitF.swift in Sources */,
 				1E35BEB61CD1737700D2290C /* ViewControllerHome.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

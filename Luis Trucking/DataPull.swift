@@ -230,7 +230,8 @@ func GetIDs() -> [String]{
 }
 
 
-func SubmitTicket(ticket: TicketModel){
+func SubmitTicket(ticket: TicketModel)-> Bool{
+    var RT = false
     let request = NSMutableURLRequest(URL: NSURL(string: "http://ec2-52-33-225-48.us-west-2.compute.amazonaws.com/iOSGetTicketInfo.php")!)
     request.HTTPMethod = "POST"
 
@@ -251,12 +252,13 @@ func SubmitTicket(ticket: TicketModel){
     let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
         guard error == nil && data != nil else {                                                          // check for fundamental networking error
             print("error=\(error)")
+            dispatch_semaphore_signal(semaphore)
             return
             
             }
         
         let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
-        
+        RT = true;
         
         print(responseString) //200 Good
         dispatch_semaphore_signal(semaphore)
@@ -264,10 +266,11 @@ func SubmitTicket(ticket: TicketModel){
     }
     task.resume()
     dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER)
-   
+    return RT
 }
 
-func SubmitExpense(Expense: ExpenseModel){
+func SubmitExpense(Expense: ExpenseModel)-> Bool{
+    var RT = false
     let request = NSMutableURLRequest(URL: NSURL(string: "http://ec2-52-33-225-48.us-west-2.compute.amazonaws.com/iOSUploadExpense.php")!)
     request.HTTPMethod = "POST"
     
@@ -289,12 +292,13 @@ func SubmitExpense(Expense: ExpenseModel){
     let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
         guard error == nil && data != nil else {                                                          // check for fundamental networking error
             print("error=\(error)")
+            dispatch_semaphore_signal(semaphore)
             return
             
         }
         
         let responseString = NSString(data: data!, encoding: NSUTF8StringEncoding)
-        
+        RT = true
         
         print(responseString) //200 Good
         dispatch_semaphore_signal(semaphore)
@@ -302,5 +306,6 @@ func SubmitExpense(Expense: ExpenseModel){
     }
     task.resume()
     dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER)
+    return RT
     
 }

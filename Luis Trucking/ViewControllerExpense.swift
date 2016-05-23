@@ -23,7 +23,24 @@ class ViewControllerExpense: UIViewController {
     }
     
     @IBAction func SubExpense(sender: UIButton) {
-        self.performSegueWithIdentifier("subex", sender: sender)
+        let expense = ExpenseModel()
+        
+        expense.expensedate = Date2
+        expense.truckid = TruckID2
+        expense.expensetype = ExpenseT
+        expense.drivername = Name
+        expense.vendorname = Vendor
+        expense.details = Descript
+        expense.amount = Amount2
+        if(SubmitExpense(expense))
+        {
+            self.performSegueWithIdentifier("subeg", sender: sender)
+        }
+        else
+        {
+           self.performSegueWithIdentifier("subef", sender: sender) 
+        }
+
     }
 
     override func didReceiveMemoryWarning() {
