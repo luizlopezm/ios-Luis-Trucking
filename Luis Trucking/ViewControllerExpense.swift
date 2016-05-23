@@ -10,7 +10,16 @@ import UIKit
 
 class ViewControllerExpense: UIViewController {
 
+    @IBOutlet weak var bt: UIButton!
+    @IBOutlet weak var Nt: UILabel!
+    
     override func viewDidLoad() {
+        Nt.hidden = true
+        if(!isConnectedToNetwork())
+        {
+            bt.hidden = true
+            Nt.hidden = false
+        }
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

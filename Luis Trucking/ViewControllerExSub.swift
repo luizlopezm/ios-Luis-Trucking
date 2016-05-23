@@ -25,8 +25,12 @@ class ViewControllerExSub: FormViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        addTicketForm(toForm: form)
-
+        
+        
+        if(isConnectedToNetwork())
+        {
+            addTicketForm(toForm: form)
+        }
         // Do any additional setup after loading the view.
     }
     

@@ -10,10 +10,14 @@ import UIKit
 
 class ViewControllerTicket: UIViewController {
     
+    @IBOutlet weak var bt: UIButton!
+    @IBOutlet weak var nt: UILabel!
+    
     @IBAction func logout(sender: UIBarButtonItem) {
         self.performSegueWithIdentifier("ftab_to_lg", sender: sender)
         
     }
+    
     @IBAction func Submit(sender: UIButton) {
         let tick = TicketModel()
         
@@ -35,6 +39,12 @@ class ViewControllerTicket: UIViewController {
         }
     }
     override func viewDidLoad() {
+        nt.hidden = true
+        if(!isConnectedToNetwork())
+        {
+            bt.hidden = true
+            nt.hidden = false
+        }
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.

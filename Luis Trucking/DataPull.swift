@@ -22,6 +22,7 @@ func GetHaulers() -> [String]{
     let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
         guard error == nil && data != nil else {                                                          // check for fundamental networking error
             print("error=\(error)")
+            dispatch_semaphore_signal(semaphore)
             return
         }
         
@@ -69,6 +70,7 @@ func GetBrokers() -> [String]{
     let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
         guard error == nil && data != nil else {                                                          // check for fundamental networking error
             print("error=\(error)")
+            dispatch_semaphore_signal(semaphore)
             return
         }
         
@@ -111,6 +113,7 @@ func GetExpenseType() -> [String]{
     let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
         guard error == nil && data != nil else {                                                          // check for fundamental networking error
             print("error=\(error)")
+            dispatch_semaphore_signal(semaphore)
             return
         }
         
@@ -154,6 +157,7 @@ func GetVendor() -> [String]{
     let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
         guard error == nil && data != nil else {                                                          // check for fundamental networking error
             print("error=\(error)")
+            dispatch_semaphore_signal(semaphore)
             return
         }
         
@@ -199,6 +203,7 @@ func GetIDs() -> [String]{
     let task = NSURLSession.sharedSession().dataTaskWithRequest(request) { data, response, error in
         guard error == nil && data != nil else {                                                          // check for fundamental networking error
             print("error=\(error)")
+            dispatch_semaphore_signal(semaphore)
             return
         }
         

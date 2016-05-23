@@ -29,6 +29,9 @@
 		1E6488E61CEA11F2006CA5E0 /* ExpenseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6488E51CEA11F2006CA5E0 /* ExpenseModel.swift */; };
 		1E6488E81CEA17D3006CA5E0 /* ViewControllerExSubmit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6488E71CEA17D3006CA5E0 /* ViewControllerExSubmit.swift */; };
 		1E6488EA1CEA40E2006CA5E0 /* ViewControllerCharts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6488E91CEA40E2006CA5E0 /* ViewControllerCharts.swift */; };
+		1E7ECB2F1CF31B9400616EFA /* connect.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E7ECB2E1CF31B9400616EFA /* connect.png */; };
+		1E7ECB311CF3256B00616EFA /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E7ECB301CF3256B00616EFA /* user.png */; };
+		1E7ECB331CF3266000616EFA /* pass.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E7ECB321CF3266000616EFA /* pass.png */; };
 		1E99DA3A1CD16DCC0027262E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E99DA391CD16DCC0027262E /* Assets.xcassets */; };
 		1E99DA3D1CD16DCC0027262E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E99DA3B1CD16DCC0027262E /* LaunchScreen.storyboard */; };
 		1E99DA481CD16DCC0027262E /* Luis_TruckingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99DA471CD16DCC0027262E /* Luis_TruckingTests.swift */; };
@@ -73,12 +76,16 @@
 		1E35BEAE1CD1737700D2290C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../Test App/Test App/ViewController.swift"; sourceTree = "<group>"; };
 		1E35BEAF1CD1737700D2290C /* ViewControllerHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewControllerHome.swift; path = "../../Test App/Test App/ViewControllerHome.swift"; sourceTree = "<group>"; };
 		1E35BEBF1CD1767000D2290C /* ViewControllerTicket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTicket.swift; sourceTree = "<group>"; };
+		1E3A0CD11CF30C4A001A89B2 /* CNPPopupSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CNPPopupSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		1E433F7F1CD2270D008D2A9E /* ViewControllerTickSub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTickSub.swift; sourceTree = "<group>"; };
 		1E50BA2C1CD82CF000615394 /* ViewControllerExSub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExSub.swift; sourceTree = "<group>"; };
 		1E52BB381CD7ECEA00C1959D /* ViewControllerExpense.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExpense.swift; sourceTree = "<group>"; };
 		1E6488E51CEA11F2006CA5E0 /* ExpenseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpenseModel.swift; sourceTree = "<group>"; };
 		1E6488E71CEA17D3006CA5E0 /* ViewControllerExSubmit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExSubmit.swift; sourceTree = "<group>"; };
 		1E6488E91CEA40E2006CA5E0 /* ViewControllerCharts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerCharts.swift; sourceTree = "<group>"; };
+		1E7ECB2E1CF31B9400616EFA /* connect.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = connect.png; path = ../../connect.png; sourceTree = "<group>"; };
+		1E7ECB301CF3256B00616EFA /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = ../../user.png; sourceTree = "<group>"; };
+		1E7ECB321CF3266000616EFA /* pass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pass.png; path = ../../pass.png; sourceTree = "<group>"; };
 		1E99DA2F1CD16DCC0027262E /* Luis Trucking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Luis Trucking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E99DA391CD16DCC0027262E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E99DA3C1CD16DCC0027262E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -167,6 +174,7 @@
 		1E99DA311CD16DCC0027262E /* Luis Trucking */ = {
 			isa = PBXGroup;
 			children = (
+				1E3A0CD11CF30C4A001A89B2 /* CNPPopupSwift-Bridging-Header.h */,
 				1E35BEAC1CD1737700D2290C /* TicketModel.swift */,
 				1E6488E51CEA11F2006CA5E0 /* ExpenseModel.swift */,
 				1EF3F18B1CD41D8900DC82FD /* DataPull.swift */,
@@ -184,6 +192,9 @@
 				1E6488E71CEA17D3006CA5E0 /* ViewControllerExSubmit.swift */,
 				1E32B8CF1CF2FCDB00D0DC9F /* ViewControllerExSubmitF.swift */,
 				1E99DA391CD16DCC0027262E /* Assets.xcassets */,
+				1E7ECB321CF3266000616EFA /* pass.png */,
+				1E7ECB2E1CF31B9400616EFA /* connect.png */,
+				1E7ECB301CF3256B00616EFA /* user.png */,
 				1E99DA3B1CD16DCC0027262E /* LaunchScreen.storyboard */,
 				1E02F4721CD181A200C4B742 /* Main.storyboard */,
 				1E99DA3E1CD16DCC0027262E /* Info.plist */,
@@ -323,10 +334,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E35BEAB1CD1731300D2290C /* RobotoSlab-Regular.ttf in Resources */,
+				1E7ECB2F1CF31B9400616EFA /* connect.png in Resources */,
 				1E99DA3D1CD16DCC0027262E /* LaunchScreen.storyboard in Resources */,
 				1E35BEA81CD1731300D2290C /* RobotoSlab-Thin.ttf in Resources */,
 				1E02F4731CD181A200C4B742 /* Main.storyboard in Resources */,
 				1E35BEAA1CD1731300D2290C /* RobotoSlab-Bold.ttf in Resources */,
+				1E7ECB311CF3256B00616EFA /* user.png in Resources */,
+				1E7ECB331CF3266000616EFA /* pass.png in Resources */,
 				1E35BEA91CD1731300D2290C /* RobotoSlab-Light.ttf in Resources */,
 				1E99DA3A1CD16DCC0027262E /* Assets.xcassets in Resources */,
 				1E35BEA71CD1731300D2290C /* IMG_1654.png in Resources */,

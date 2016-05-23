@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '451C406A7A22351F49C779D0'
-               BlueprintName = 'Eureka'
+               BlueprintIdentifier = '05BE7B15FCE1E689E2720D01'
+               BlueprintName = 'CNPPopupController'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Eureka.framework'>
+               BuildableName = 'CNPPopupController.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -84,11 +84,13 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Luis Trucking/CNPPopupController.framework"
   install_framework "Pods-Luis Trucking/Charts.framework"
   install_framework "Pods-Luis Trucking/Eureka.framework"
   install_framework "Pods-Luis Trucking/SwiftForms.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Luis Trucking/CNPPopupController.framework"
   install_framework "Pods-Luis Trucking/Charts.framework"
   install_framework "Pods-Luis Trucking/Eureka.framework"
   install_framework "Pods-Luis Trucking/SwiftForms.framework"

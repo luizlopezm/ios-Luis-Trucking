@@ -27,9 +27,10 @@ class ViewControllerTickSub : FormViewController{
         
         
         super.viewDidLoad()
-        
-        addTicketForm(toForm: form)
-        
+        if(isConnectedToNetwork())
+        {
+            addTicketForm(toForm: form)
+        }
     }
     
     private func addTicketForm(toForm form: Form) {

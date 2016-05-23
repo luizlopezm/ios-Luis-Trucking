@@ -6,6 +6,7 @@
 pod 'SwiftForms'
 pod 'Eureka', '~> 1.5'
 pod 'Charts'
+pod 'CNPPopupController'
 target 'Luis Trucking' do
 
 end

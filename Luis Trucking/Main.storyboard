@@ -12,6 +12,8 @@
             <string>RobotoSlab-Light</string>
             <string>RobotoSlab-Light</string>
             <string>RobotoSlab-Light</string>
+            <string>RobotoSlab-Light</string>
+            <string>RobotoSlab-Light</string>
         </mutableArray>
         <mutableArray key="RobotoSlab-Regular.ttf">
             <string>RobotoSlab-Regular</string>
@@ -176,22 +178,32 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="barTintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Internet Conection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVN-Wf-ObO">
+                                <rect key="frame" x="118" y="357.5" width="177" height="22.5"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="17"/>
+                                <color key="textColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Fe6-IW-P0v" firstAttribute="leading" secondItem="eMO-Ye-HBb" secondAttribute="leadingMargin" constant="-20" id="9gr-EB-QpZ"/>
                             <constraint firstItem="ai4-r7-ggE" firstAttribute="centerX" secondItem="eMO-Ye-HBb" secondAttribute="centerX" id="BaO-Ow-XFZ"/>
+                            <constraint firstItem="EVN-Wf-ObO" firstAttribute="centerX" secondItem="eMO-Ye-HBb" secondAttribute="centerX" id="Yv2-HJ-t0D"/>
                             <constraint firstItem="xzs-YN-Hqb" firstAttribute="top" secondItem="ai4-r7-ggE" secondAttribute="bottom" constant="20" id="bT9-VO-GXg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="4Ji-Kt-vMF" secondAttribute="trailing" constant="-20" id="fTh-c4-igU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fe6-IW-P0v" secondAttribute="trailing" constant="-20" id="pdg-TJ-DxS"/>
+                            <constraint firstItem="EVN-Wf-ObO" firstAttribute="centerY" secondItem="eMO-Ye-HBb" secondAttribute="centerY" id="shA-ny-Zp3"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Expense" image="wallet-7" id="BaE-QX-GXo"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="Nt" destination="EVN-Wf-ObO" id="HYc-oo-mC2"/>
+                        <outlet property="bt" destination="ai4-r7-ggE" id="5HX-Xe-3tK"/>
                         <segue destination="FXP-EX-l39" kind="presentation" identifier="logoff" modalTransitionStyle="crossDissolve" id="PKq-JD-QmV"/>
-                        <segue destination="mYr-UC-c37" kind="presentation" identifier="subef" id="EVx-WC-qJc"/>
+                        <segue destination="mYr-UC-c37" kind="presentation" identifier="subef" modalTransitionStyle="crossDissolve" id="EVx-WC-qJc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cgr-vh-vZo" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -216,8 +228,8 @@
                                     <segue destination="C7a-za-kGv" kind="embed" id="VcB-18-bCy"/>
                                 </connections>
                             </containerView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aj9-4y-AJw">
-                                <rect key="frame" x="151" y="677" width="112" height="39"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aj9-4y-AJw">
+                                <rect key="frame" x="151" y="628" width="112" height="39"/>
                                 <color key="backgroundColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="112" id="OFD-D5-x0N"/>
@@ -249,12 +261,20 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="barTintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Internet Conection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMl-b8-Ude">
+                                <rect key="frame" x="118.5" y="357" width="177" height="22.5"/>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="17"/>
+                                <color key="textColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="uLS-RN-zli" secondAttribute="trailing" constant="-20" id="BHD-e3-Gwm"/>
                             <constraint firstAttribute="trailingMargin" secondItem="rbl-aD-oqN" secondAttribute="trailing" constant="-20" id="G7l-fn-RXs"/>
                             <constraint firstItem="Aj9-4y-AJw" firstAttribute="centerX" secondItem="dlR-qf-x8m" secondAttribute="centerX" id="Jfo-oO-NqC"/>
+                            <constraint firstItem="ZMl-b8-Ude" firstAttribute="centerY" secondItem="dlR-qf-x8m" secondAttribute="centerY" id="SJn-0E-OTG"/>
+                            <constraint firstItem="ZMl-b8-Ude" firstAttribute="centerX" secondItem="dlR-qf-x8m" secondAttribute="centerX" id="ZIc-eV-vFt"/>
                             <constraint firstItem="r0n-qp-awP" firstAttribute="top" secondItem="Aj9-4y-AJw" secondAttribute="bottom" constant="20" id="fQH-9P-VFl"/>
                             <constraint firstItem="rbl-aD-oqN" firstAttribute="leading" secondItem="dlR-qf-x8m" secondAttribute="leadingMargin" constant="-20" id="fiP-fM-wcs"/>
                             <constraint firstItem="uLS-RN-zli" firstAttribute="leading" secondItem="dlR-qf-x8m" secondAttribute="leadingMargin" constant="-20" id="jkc-qX-X2g"/>
@@ -263,9 +283,11 @@
                     <tabBarItem key="tabBarItem" title="Ticket" image="note-write-7" id="djU-AI-NeP"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
+                        <outlet property="bt" destination="Aj9-4y-AJw" id="EyW-Yf-sCu"/>
+                        <outlet property="nt" destination="ZMl-b8-Ude" id="qfO-dH-eqn"/>
                         <segue destination="FXP-EX-l39" kind="presentation" identifier="ftab_to_lg" modalTransitionStyle="crossDissolve" id="ePb-Tw-8tN"/>
-                        <segue destination="QE0-gC-xL3" kind="presentation" identifier="submit" modalTransitionStyle="crossDissolve" id="ujb-RZ-Pir"/>
-                        <segue destination="1He-l3-rLI" kind="presentation" identifier="submitF" id="Pvy-b4-H96"/>
+                        <segue destination="QE0-gC-xL3" kind="show" identifier="submit" id="ujb-RZ-Pir"/>
+                        <segue destination="1He-l3-rLI" kind="presentation" identifier="submitF" modalTransitionStyle="crossDissolve" id="Pvy-b4-H96"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYh-3A-kCC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -625,7 +647,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="Subm" destination="jjk-NA-KMq" id="Cwv-ic-eI7"/>
-                        <segue destination="lqZ-lT-Ukc" kind="presentation" identifier="hm2_1" id="kgi-xu-TEG"/>
+                        <segue destination="lqZ-lT-Ukc" kind="presentation" identifier="hm2_1" modalTransitionStyle="crossDissolve" id="kgi-xu-TEG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LR5-NX-Ym2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -701,7 +723,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="Subm" destination="RMW-gP-FAm" id="nXV-A6-RDS"/>
-                        <segue destination="lqZ-lT-Ukc" kind="presentation" identifier="hm_1" id="dQL-Tq-bcL"/>
+                        <segue destination="lqZ-lT-Ukc" kind="presentation" identifier="hm_1" modalTransitionStyle="crossDissolve" id="dQL-Tq-bcL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlR-ah-nop" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -718,7 +740,7 @@
         <image name="x-mark-3-512" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ePb-Tw-8tN"/>
-        <segue reference="CmJ-4l-Hbz"/>
+        <segue reference="kgi-xu-TEG"/>
+        <segue reference="PKq-JD-QmV"/>
     </inferredMetricsTieBreakers>
 </document>
