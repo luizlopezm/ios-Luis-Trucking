@@ -13,20 +13,23 @@ class ViewControllerExpense: UIViewController {
     @IBOutlet weak var bt: UIButton!
     @IBOutlet weak var Nt: UILabel!
     
-    override func viewDidLoad() {
+    override func viewWillAppear(animated: Bool) {
+        super.viewDidLoad()
         Nt.hidden = true
         if(!isConnectedToNetwork())
         {
             bt.hidden = true
             Nt.hidden = false
         }
-        super.viewDidLoad()
-
+        else
+        {
+            bt.hidden = false
+            Nt.hidden = true
+        }
         // Do any additional setup after loading the view.
     
     }
-    
-    
+
     @IBAction func log_t(sender: UIBarButtonItem) {
         self.performSegueWithIdentifier("logoff", sender: sender)
     }

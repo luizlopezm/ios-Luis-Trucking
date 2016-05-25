@@ -38,18 +38,24 @@ class ViewControllerTicket: UIViewController {
             self.performSegueWithIdentifier("submitF", sender: sender)
         }
     }
-    override func viewDidLoad() {
+    override func viewWillAppear(animated: Bool) {
+
+        super.viewDidLoad()
         nt.hidden = true
         if(!isConnectedToNetwork())
         {
             bt.hidden = true
             nt.hidden = false
         }
-        super.viewDidLoad()
+        else
+        {
+            bt.hidden = false
+            nt.hidden = true
+        }
         
         // Do any additional setup after loading the view.
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

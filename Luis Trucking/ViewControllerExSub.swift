@@ -17,22 +17,31 @@ var Vendor = ""
 var Descript = ""
 
 
+
 class ViewControllerExSub: FormViewController {
     
-    var TruckIDs = GetIDs()
-    var Expenses = GetExpenseType()
-    var Vendors = GetVendor()
+    var TruckIDs = [String]()
+    var Expenses = [String]()
+    var Vendors = [String]()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
         if(isConnectedToNetwork())
         {
-            addTicketForm(toForm: form)
+
+                Vendors = GetVendor()
+                Expenses = GetExpenseType()
+                TruckIDs = GetIDs()
+                form.removeAll()
+                addTicketForm(toForm: form)
+
         }
+
+
         // Do any additional setup after loading the view.
     }
+
     
     private func addTicketForm(toForm form: Form) {
         let dateFormatter = NSDateFormatter()
@@ -43,7 +52,7 @@ class ViewControllerExSub: FormViewController {
             <<< ActionSheetRow<String>("ExpenseType") {$0.title = "Expense Type: ";$0.selectorTitle = "Please Select an Expense:"; $0.options = Expenses; $0.value = Expenses[0]}.onChange{row in ExpenseT = row.value!}
             <<< ActionSheetRow<String>("Vender") {$0.title = "Vender: ";$0.selectorTitle = "Please Select a Vender:"; $0.options = Vendors; $0.value = Vendors[0]}.onChange{row in Vendor = row.value!}
             <<< DateRow("Date") {$0.title = "Date: " ; $0.value = NSDate()}.onChange{row in Date2 = dateFormatter.stringFromDate(row.value!)}
-            <<< TextRow("Amount") { $0.title = "Amount:"}.onChange{row in if row.value != nil{Amount2 = row.value!}}
+            <<< TextRow("Amount") { $0.title = "Amount:"; $0.cell.textField.keyboardType = UIKeyboardType.DecimalPad}.onChange{row in if row.value != nil{Amount2 = row.value!}}
             <<< TextAreaRow("Des"){$0.placeholder = "Description"}.onChange{row in if row.value != nil{Descript = row.value!}}
         
         

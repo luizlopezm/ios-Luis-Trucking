@@ -21,6 +21,10 @@
             <string>RobotoSlab-Regular</string>
             <string>RobotoSlab-Regular</string>
             <string>RobotoSlab-Regular</string>
+            <string>RobotoSlab-Regular</string>
+            <string>RobotoSlab-Regular</string>
+            <string>RobotoSlab-Regular</string>
+            <string>RobotoSlab-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -229,7 +233,7 @@
                                 </connections>
                             </containerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aj9-4y-AJw">
-                                <rect key="frame" x="151" y="628" width="112" height="39"/>
+                                <rect key="frame" x="151" y="677" width="112" height="39"/>
                                 <color key="backgroundColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="112" id="OFD-D5-x0N"/>
@@ -262,7 +266,7 @@
                                 <color key="barTintColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Internet Conection" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMl-b8-Ude">
-                                <rect key="frame" x="118.5" y="357" width="177" height="22.5"/>
+                                <rect key="frame" x="118" y="357" width="177" height="22.5"/>
                                 <fontDescription key="fontDescription" name="RobotoSlab-Light" family="Roboto Slab" pointSize="17"/>
                                 <color key="textColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -339,21 +343,89 @@
                                 <rect key="frame" x="0.0" y="122" width="414" height="323"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Monthly Payout: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzX-Pu-RoR">
+                                <rect key="frame" x="16" y="462" width="195" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="sqz-Rh-dwa"/>
+                                    <constraint firstAttribute="width" constant="195" id="xiA-9K-Iv9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="15"/>
+                                <color key="textColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgp-9O-Kpt">
+                                <rect key="frame" x="227" y="462" width="89" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Jlc-15-gQL"/>
+                                    <constraint firstAttribute="width" constant="89" id="a3r-mZ-CiU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="16"/>
+                                <color key="textColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Monthly Expenses: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efG-WN-jJI">
+                                <rect key="frame" x="16" y="498" width="195" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="195" id="A1P-qE-dEA"/>
+                                    <constraint firstAttribute="height" constant="42" id="R9v-s5-YwU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="15"/>
+                                <color key="textColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPj-aS-cAL">
+                                <rect key="frame" x="227" y="498" width="89" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="Wcl-qP-zfx"/>
+                                    <constraint firstAttribute="height" constant="42" id="wfE-CL-aSK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RobotoSlab-Regular" family="Roboto Slab" pointSize="16"/>
+                                <color key="textColor" red="0.32549019610000002" green="0.27450980390000002" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ho8-dv-StG">
+                                <rect key="frame" x="106" y="405" width="107" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="WwW-Hh-kXE"/>
+                                    <constraint firstAttribute="width" constant="107" id="uDg-DV-73b"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Total"/>
+                                    <segment title="Month"/>
+                                </segments>
+                                <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="PieChange:" destination="8Tz-A5-iIf" eventType="valueChanged" id="Sbg-2n-Q5L"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="fap-bj-eCy" secondAttribute="trailing" constant="-20" id="48k-gK-6hl"/>
                             <constraint firstItem="fap-bj-eCy" firstAttribute="leading" secondItem="61O-Jq-Fl9" secondAttribute="leadingMargin" constant="-20" id="6C3-xs-eVb"/>
+                            <constraint firstItem="efG-WN-jJI" firstAttribute="top" secondItem="Ho8-dv-StG" secondAttribute="bottom" constant="65" id="BUU-Es-F66"/>
+                            <constraint firstItem="lzX-Pu-RoR" firstAttribute="leading" secondItem="61O-Jq-Fl9" secondAttribute="leadingMargin" id="HK9-j3-57O"/>
+                            <constraint firstItem="s1E-sF-A6A" firstAttribute="top" secondItem="lzX-Pu-RoR" secondAttribute="bottom" constant="64" id="Ohf-ZA-qW9"/>
                             <constraint firstItem="9NR-AJ-EdL" firstAttribute="top" secondItem="fap-bj-eCy" secondAttribute="bottom" constant="62" id="Zit-dO-59c"/>
+                            <constraint firstItem="s1E-sF-A6A" firstAttribute="top" secondItem="Pgp-9O-Kpt" secondAttribute="bottom" constant="64" id="dyI-Jt-Hic"/>
                             <constraint firstAttribute="trailingMargin" secondItem="9NR-AJ-EdL" secondAttribute="trailing" constant="-15" id="gcj-1L-KSt"/>
+                            <constraint firstItem="efG-WN-jJI" firstAttribute="leading" secondItem="61O-Jq-Fl9" secondAttribute="leadingMargin" id="hNt-3D-Clt"/>
                             <constraint firstItem="9NR-AJ-EdL" firstAttribute="leading" secondItem="61O-Jq-Fl9" secondAttribute="leadingMargin" constant="-15" id="iBL-c9-1IS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="BPj-aS-cAL" secondAttribute="trailing" constant="-12" id="kbZ-M4-S7B"/>
+                            <constraint firstItem="s1E-sF-A6A" firstAttribute="top" secondItem="BPj-aS-cAL" secondAttribute="bottom" constant="28" id="mAe-cW-8my"/>
+                            <constraint firstItem="s1E-sF-A6A" firstAttribute="top" secondItem="efG-WN-jJI" secondAttribute="bottom" constant="28" id="pPb-YI-gyl"/>
+                            <constraint firstItem="Ho8-dv-StG" firstAttribute="centerX" secondItem="61O-Jq-Fl9" secondAttribute="centerX" id="vJB-l5-lbS"/>
                             <constraint firstItem="s1E-sF-A6A" firstAttribute="top" secondItem="9NR-AJ-EdL" secondAttribute="bottom" constant="180" id="vma-A0-5uk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Pgp-9O-Kpt" secondAttribute="trailing" constant="-12" id="wRS-uF-J58"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="home-7" id="hZD-S5-tZp"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="Et" destination="BPj-aS-cAL" id="LeR-Ye-Bel"/>
+                        <outlet property="Mt" destination="Pgp-9O-Kpt" id="0hg-cT-I08"/>
                         <outlet property="PieChart" destination="9NR-AJ-EdL" id="veD-qw-W15"/>
+                        <outlet property="PieSelect" destination="Ho8-dv-StG" id="q7K-eg-ViU"/>
                         <outlet property="home_name" destination="gfy-2U-6Vn" id="Sc9-D7-4ac"/>
                         <segue destination="FXP-EX-l39" kind="presentation" identifier="htab_to_lg" modalTransitionStyle="crossDissolve" id="eoZ-qK-8Up"/>
                     </connections>
@@ -398,7 +470,7 @@
                         <viewControllerLayoutGuide type="bottom" id="rjG-1C-8US"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Pw0-MZ-U8s">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -492,7 +564,7 @@
                         <viewControllerLayoutGuide type="bottom" id="mOw-vl-ZWA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="0RD-qT-3iT">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="627"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -741,6 +813,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="kgi-xu-TEG"/>
-        <segue reference="PKq-JD-QmV"/>
+        <segue reference="ePb-Tw-8tN"/>
     </inferredMetricsTieBreakers>
 </document>

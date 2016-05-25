@@ -38,6 +38,7 @@
 		1E99DA531CD16DCC0027262E /* Luis_TruckingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E99DA521CD16DCC0027262E /* Luis_TruckingUITests.swift */; };
 		1EF3F18A1CD3FAC200DC82FD /* ViewControllerTickSubmit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3F1891CD3FAC200DC82FD /* ViewControllerTickSubmit.swift */; };
 		1EF3F18C1CD41D8900DC82FD /* DataPull.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF3F18B1CD41D8900DC82FD /* DataPull.swift */; };
+		1EF8BAD41CF480D40077816C /* AppIcon.appiconset in Resources */ = {isa = PBXBuildFile; fileRef = 1EF8BAD31CF480D40077816C /* AppIcon.appiconset */; };
 		F4D6903CDECBF478BBB1CD82 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6252E68205D3668AEDA7CDEC /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +99,7 @@
 		1E99DA541CD16DCC0027262E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EF3F1891CD3FAC200DC82FD /* ViewControllerTickSubmit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerTickSubmit.swift; sourceTree = "<group>"; };
 		1EF3F18B1CD41D8900DC82FD /* DataPull.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPull.swift; sourceTree = "<group>"; };
+		1EF8BAD31CF480D40077816C /* AppIcon.appiconset */ = {isa = PBXFileReference; lastKnownFileType = folder; name = AppIcon.appiconset; path = ../../../Downloads/logo1/ios/AppIcon.appiconset; sourceTree = "<group>"; };
 		6252E68205D3668AEDA7CDEC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75CD4416362B08595EFDB7E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,6 +193,7 @@
 				1E50BA2C1CD82CF000615394 /* ViewControllerExSub.swift */,
 				1E6488E71CEA17D3006CA5E0 /* ViewControllerExSubmit.swift */,
 				1E32B8CF1CF2FCDB00D0DC9F /* ViewControllerExSubmitF.swift */,
+				1EF8BAD31CF480D40077816C /* AppIcon.appiconset */,
 				1E99DA391CD16DCC0027262E /* Assets.xcassets */,
 				1E7ECB321CF3266000616EFA /* pass.png */,
 				1E7ECB2E1CF31B9400616EFA /* connect.png */,
@@ -337,6 +340,7 @@
 				1E7ECB2F1CF31B9400616EFA /* connect.png in Resources */,
 				1E99DA3D1CD16DCC0027262E /* LaunchScreen.storyboard in Resources */,
 				1E35BEA81CD1731300D2290C /* RobotoSlab-Thin.ttf in Resources */,
+				1EF8BAD41CF480D40077816C /* AppIcon.appiconset in Resources */,
 				1E02F4731CD181A200C4B742 /* Main.storyboard in Resources */,
 				1E35BEAA1CD1731300D2290C /* RobotoSlab-Bold.ttf in Resources */,
 				1E7ECB311CF3256B00616EFA /* user.png in Resources */,
@@ -566,7 +570,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 042A96052C6F8ADEF67C4325 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -583,7 +587,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A75CD4416362B08595EFDB7E /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
